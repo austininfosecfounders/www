@@ -1,0 +1,300 @@
+# Austin security companies. See /contribute for the format.
+# category: Identity, Endpoint, Network, Cloud, AppSec, Threat Intel, Data Security, GRC, Services, Offensive, Fraud, Other
+# stage: Public, Late-stage, Growth, Early, Acquired
+# hq: true = headquartered in Austin; false = major Austin office
+# Last verified: 2026-10-20
+
+# --- Austin HQ ---
+- name: CrowdStrike
+  url: https://www.crowdstrike.com
+  careers_url: https://www.crowdstrike.com/en-us/careers/
+  category: Endpoint
+  stage: Public
+  hq: true
+  description: "Cloud-native endpoint and XDR platform; HQ moved to Austin in 2021."
+- name: SailPoint
+  url: https://www.sailpoint.com
+  careers_url: https://www.sailpoint.com/company/careers
+  category: Identity
+  stage: Public
+  hq: true
+  description: "Identity security and governance."
+- name: Forcepoint
+  url: https://www.forcepoint.com
+  careers_url: https://www.forcepoint.com/company/work-with-us
+  category: Data Security
+  stage: Late-stage
+  hq: true
+  description: "Data-first security: DLP, SSE and data security posture management."
+- name: NinjaOne
+  url: https://www.ninjaone.com
+  careers_url: https://www.ninjaone.com/careers/
+  category: Endpoint
+  stage: Late-stage
+  hq: true
+  description: "Endpoint management and patching platform."
+- name: SolarWinds
+  url: https://www.solarwinds.com
+  careers_url: https://jobs.solarwinds.com/
+  category: Other
+  stage: Acquired
+  hq: true
+  description: "IT observability and security software; taken private by Turn/River in 2025."
+- name: Halcyon
+  url: https://www.halcyon.ai
+  careers_url: https://www.halcyon.ai/careers
+  category: Endpoint
+  stage: Late-stage
+  hq: true
+  description: "Anti-ransomware platform: prevention, resilience and recovery."
+- name: SpyCloud
+  url: https://spycloud.com
+  careers_url: https://spycloud.com/company/careers/
+  category: Threat Intel
+  stage: Late-stage
+  hq: true
+  description: "Recaptured darknet identity data to prevent account takeover and fraud."
+- name: Ontic
+  url: https://ontic.co
+  careers_url: https://ontic.co/company/careers/
+  category: Other
+  stage: Late-stage
+  hq: true
+  description: "Protective intelligence platform for physical threat and incident management."
+- name: Invicti
+  url: https://www.invicti.com
+  careers_url: https://www.invicti.com/careers
+  category: AppSec
+  stage: Late-stage
+  hq: true
+  description: "DAST and API security testing (Acunetix, Netsparker lineage)."
+- name: SEON
+  url: https://seon.io
+  careers_url: https://seon.io/careers/
+  category: Fraud
+  stage: Late-stage
+  hq: true
+  description: "Fraud prevention and AML platform; founded in Budapest, HQ in Austin."
+- name: Praetorian
+  url: https://www.praetorian.com
+  careers_url: https://www.praetorian.com/careers/
+  category: Offensive
+  stage: Growth
+  hq: true
+  description: "Offensive security firm and Chariot exposure management platform."
+- name: HiddenLayer
+  url: https://www.hiddenlayer.com
+  careers_url: https://www.hiddenlayer.com/careers
+  category: Other
+  stage: Growth
+  hq: true
+  description: "Security platform for AI models and deployments."
+- name: CertifID
+  url: https://www.certifid.com
+  careers_url: https://www.certifid.com/company/careers
+  category: Fraud
+  stage: Growth
+  hq: true
+  description: "Wire fraud prevention for real estate transactions."
+- name: Portnox
+  url: https://www.portnox.com
+  careers_url: https://portnox.pinpointhq.com/
+  category: Network
+  stage: Growth
+  hq: true
+  description: "Cloud-native NAC and zero-trust access; US HQ in Austin."
+- name: Living Security
+  url: https://www.livingsecurity.com
+  careers_url: https://www.livingsecurity.com/about-us/careers-and-culture
+  category: GRC
+  stage: Growth
+  hq: true
+  description: "Human risk management platform; hosts HRMCon in Austin."
+- name: Brinqa
+  url: https://www.brinqa.com
+  category: GRC
+  stage: Growth
+  hq: true
+  description: "Unified exposure and risk-based vulnerability management."
+- name: ALTR
+  url: https://altr.com
+  careers_url: https://altr.com/careers/
+  category: Data Security
+  stage: Growth
+  hq: true
+  description: "Data access governance and security for cloud data platforms."
+- name: Theori
+  url: https://theori.io
+  category: Offensive
+  stage: Growth
+  hq: true
+  description: "Offensive security research, AI AppSec and Dreamhack training."
+- name: Exodus Intelligence
+  url: https://blog.exodusintel.com
+  category: Offensive
+  stage: Growth
+  hq: true
+  description: "Zero-day and n-day vulnerability research and exploit intelligence."
+- name: atsec information security
+  url: https://www.atsec.com
+  category: Services
+  stage: Growth
+  hq: true
+  description: "Common Criteria, FIPS and security evaluation lab."
+- name: Mallory
+  url: https://mallory.ai
+  careers_url: https://mallory.ai/careers
+  category: Threat Intel
+  stage: Early
+  hq: true
+  description: "AI-native threat intelligence and exposure management platform."
+- name: Nudge Security
+  url: https://www.nudgesecurity.com
+  careers_url: https://www.nudgesecurity.com/careers
+  category: Cloud
+  stage: Early
+  hq: true
+  description: "SaaS and workforce AI security governance."
+- name: Command Zero
+  url: https://www.commandzero.ai
+  careers_url: https://www.commandzero.ai/careers
+  category: Other
+  stage: Early
+  hq: true
+  description: "AI-assisted cyber investigation platform for SOCs."
+- name: Spektion
+  url: https://spektion.com
+  careers_url: https://spektion.com/careers
+  category: Endpoint
+  stage: Early
+  hq: true
+  description: "Runtime-based software vulnerability and exposure management."
+- name: Evoke Security
+  url: https://www.evokesecurity.com
+  category: Other
+  stage: Early
+  hq: true
+  description: "Discovery and governance for enterprise AI agents."
+- name: Trustwise
+  url: https://trustwise.ai
+  category: Other
+  stage: Early
+  hq: true
+  description: "Runtime trust and control layer for enterprise AI agents."
+- name: Veridise
+  url: https://veridise.com
+  careers_url: https://veridise.com/careers/
+  category: AppSec
+  stage: Early
+  hq: true
+  description: "Blockchain and ZK security audits using formal methods."
+- name: Clarity Security
+  url: https://claritysecurity.com
+  category: Identity
+  stage: Early
+  hq: true
+  description: "Identity governance and administration (IGA) SaaS."
+- name: BalkanID
+  url: https://www.balkan.id
+  careers_url: https://www.balkan.id/careers
+  category: Identity
+  stage: Early
+  hq: true
+  description: "AI-powered identity governance for SaaS and public cloud."
+- name: HackNotice
+  url: https://hacknotice.com
+  category: Threat Intel
+  stage: Early
+  hq: true
+  description: "Breach and dark-web exposure monitoring for employees and vendors."
+- name: runZero
+  url: https://www.runzero.com
+  category: Network
+  stage: Acquired
+  hq: true
+  description: "Exposure and asset discovery; acquired by Accenture/Dragos (2026)."
+- name: NetRise
+  url: https://www.netrise.io
+  category: Other
+  stage: Acquired
+  hq: true
+  description: "Firmware and software supply-chain risk; acquired by Accenture/Dragos (2026)."
+- name: Sevco Security
+  url: https://www.sevcosecurity.com
+  category: Other
+  stage: Acquired
+  hq: true
+  description: "Asset intelligence and exposure assessment; acquired by Arctic Wolf (2026)."
+- name: RunReveal
+  url: https://runreveal.com
+  category: Other
+  stage: Acquired
+  hq: true
+  description: "Security data platform and SIEM; acquired by ClickHouse (2026)."
+- name: Evo Security
+  url: https://www.evosecurity.com
+  category: Identity
+  stage: Acquired
+  hq: true
+  description: "MSP-focused identity and privileged access; acquired by Barracuda (2026)."
+- name: Closinglock
+  url: https://www.closinglock.com
+  category: Fraud
+  stage: Acquired
+  hq: true
+  description: "Real estate transaction fraud prevention; acquired by CertifID (2026)."
+- name: Verosint
+  url: https://www.verosint.com
+  category: Fraud
+  stage: Acquired
+  hq: true
+  description: "Account fraud detection (formerly 443ID); acquired by Imprivata."
+
+# --- Major Austin offices ---
+- name: Cloudflare
+  url: https://www.cloudflare.com
+  careers_url: https://www.cloudflare.com/careers/
+  category: Network
+  stage: Public
+  hq: false
+  description: "Connectivity cloud; large downtown Austin office."
+- name: Rapid7
+  url: https://www.rapid7.com
+  careers_url: https://careers.rapid7.com/
+  category: Other
+  stage: Public
+  hq: false
+  description: "Security operations and exposure management; downtown Austin office."
+- name: Ping Identity
+  url: https://www.pingidentity.com
+  careers_url: https://www.pingidentity.com/en/company/careers.html
+  category: Identity
+  stage: Acquired
+  hq: false
+  description: "Identity and access management; Denver HQ with Austin office."
+- name: Thales Cloud Protection & Licensing
+  url: https://cpl.thalesgroup.com
+  category: Data Security
+  stage: Public
+  hq: false
+  description: "Encryption, key management and HSMs; Thales unit based in Austin."
+- name: IBM X-Force Red
+  url: https://www.ibm.com/x-force
+  category: Offensive
+  stage: Public
+  hq: false
+  description: "IBM's offensive security team, with a lead lab in Austin."
+- name: Hypori
+  url: https://www.hypori.com
+  careers_url: https://www.hypori.com/company/careers
+  category: Endpoint
+  stage: Growth
+  hq: false
+  description: "Secure virtual mobile workspace for BYOD; Austin tech hub."
+- name: Absolute Security
+  url: https://www.absolute.com
+  careers_url: https://www.absolute.com/company/careers
+  category: Endpoint
+  stage: Acquired
+  hq: false
+  description: "Endpoint resilience and persistence firmware; Austin office."

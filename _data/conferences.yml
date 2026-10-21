@@ -1,0 +1,34 @@
+# Security conferences in/near Austin. Last verified: 2026-10-20
+# BSides Austin omitted: bsidesaustin.com says the event is on hold.
+- name: LASCON
+  url: https://lascon.org/
+  typical_month: October
+  description: "Lonestar Application Security Conference, run by OWASP Austin, with training days beforehand."
+- name: Austin Hacker Hoedown
+  url: https://www.hackerhoedown.com/
+  typical_month: "November/December"
+  description: "Free evening of lightning talks, drinks and BBQ."
+- name: Ringzer0
+  url: https://ringzer0.training/
+  typical_month: March
+  description: "Reverse engineering and vulnerability research training, historically held in Austin."
+- name: InnoTech Austin + ISSA Security Summit
+  url: https://www.innotechaustin.com/securitysummit
+  typical_month: May
+  description: "Regional IT conference with a full-day security track run by Austin ISSA."
+- name: Official Cybersecurity Summit - Austin
+  url: https://cyberriskalliance.swoogo.com/Austin-2026
+  typical_month: June
+  description: "CISO and practitioner summit."
+- name: HRMCon
+  url: https://www.livingsecurity.com/human-risk-management-conference-hrmcon-2026-living-security
+  typical_month: September
+  description: "Living Security's free Human Risk Management conference."
+- name: Lone Star Cyber Summit
+  url: https://lonestar.cyberseries.io/
+  typical_month: October
+  description: "Executive security leadership summit in downtown Austin."
+- name: TechNexus Austin
+  url: https://technexusevents.com/conferences/technexus-austin/
+  typical_month: November
+  description: "One-day IT and cybersecurity leadership conference."

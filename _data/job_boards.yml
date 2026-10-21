@@ -1,0 +1,31 @@
+# Places to find Austin security jobs. Last verified: 2026-10-20
+- name: Built In Austin - Security
+  url: https://www.builtinaustin.com/jobs/cybersecurity-it/security
+  description: "Austin tech job board filtered to security roles."
+- name: LinkedIn - Security jobs in Austin
+  url: "https://www.linkedin.com/jobs/search/?keywords=security&location=Austin%2C%20Texas"
+  description: "Saved LinkedIn search for security roles in Austin."
+- name: Wellfound - Austin security startups
+  url: https://wellfound.com/startups/l/austin/security
+  description: "Startup security companies and roles in Austin."
+- name: Capital Factory job board
+  url: https://jobs.capitalfactory.com/jobs
+  description: "Jobs across the Capital Factory network and portfolio."
+- name: LiveOak Ventures portfolio jobs
+  url: https://jobs.liveoakvp.com/companies
+  description: "Openings at LiveOak-backed Texas startups."
+- name: Silverton Partners portfolio jobs
+  url: https://jobs.silvertonpartners.com/companies
+  description: "Openings at Silverton-backed companies."
+- name: S3 Ventures portfolio jobs
+  url: https://jobs.s3vc.com/companies
+  description: "Openings at S3 Ventures-backed companies."
+- name: ClearanceJobs - Austin
+  url: https://www.clearancejobs.com/jobs/tx/austin
+  description: "Roles requiring a security clearance in Austin."
+- name: USAJOBS - Austin cybersecurity
+  url: "https://www.usajobs.gov/search/results/?l=Austin%2C%20TX&k=cybersecurity"
+  description: "Federal cybersecurity openings in Austin."
+- name: CyberSeek heatmap
+  url: https://www.cyberseek.org/heatmap.html
+  description: "Cyber job supply and demand data by metro, including Austin."

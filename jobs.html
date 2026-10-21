@@ -1,0 +1,53 @@
+---
+layout: page
+title: Austin Security Jobs
+subtitle: Security roles in and around Austin
+permalink: /jobs/
+js:
+  - "/assets/js/directory-filter.js"
+---
+
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign jobs = site.data.jobs | sort: "posted" | reverse %}
+{% assign hiring = site.data.companies | where_exp: "co", "co.careers_url" | sort_natural: "name" %}
+
+<h2>Posted by the community</h2>
+<p>Roles shared directly by Austin security companies and community members. Postings drop off automatically after their expiry date. <a href="{{ '/contribute#post-a-job' | relative_url }}">Post a job</a>.</p>
+
+{% assign live = 0 %}
+<ul class="ai-list" id="job-list">
+{% for job in jobs %}
+  {% assign expires = job.expires | date: "%Y-%m-%d" %}
+  {% if expires >= today %}
+  {% assign live = live | plus: 1 %}
+  <li data-expires="{{ expires }}">
+    <strong><a href="{{ job.url }}" rel="noopener">{{ job.title }}</a></strong> &middot; {{ job.company }}
+    <div class="ai-meta">{{ job.location }}{% if job.type %} &middot; {{ job.type }}{% endif %} &middot; posted {{ job.posted | date: "%b %-d, %Y" }}</div>
+    {% if job.description %}<div>{{ job.description }}</div>{% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% if live == 0 %}<p><em>No open community postings right now — check the companies below, or <a href="{{ '/contribute#post-a-job' | relative_url }}">post one</a>.</em></p>{% endif %}
+
+<h2>Austin security companies with careers pages</h2>
+<div class="ai-filter" data-target="#hiring-list" data-count="#hiring-count">
+  <input type="search" placeholder="Search companies…" aria-label="Search companies">
+</div>
+<div id="hiring-count" class="ai-count"></div>
+<div class="ai-cards" id="hiring-list">
+{% for co in hiring %}
+  <a class="ai-card" data-row href="{{ co.careers_url }}" rel="noopener">
+    <h3>{{ co.name }}</h3>
+    <p>{{ co.description }}</p>
+    <div class="ai-meta">{{ co.category }}{% if co.hq %} &middot; Austin HQ{% endif %}</div>
+  </a>
+{% endfor %}
+</div>
+
+<h2>Job boards</h2>
+<ul class="ai-list">
+{% for b in site.data.job_boards %}
+  <li><strong><a href="{{ b.url }}" rel="noopener">{{ b.name }}</a></strong> &mdash; {{ b.description }}</li>
+{% endfor %}
+</ul>
