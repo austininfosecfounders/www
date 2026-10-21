@@ -2,7 +2,7 @@
 # category: Identity, Endpoint, Network, Cloud, AppSec, Threat Intel, Data Security, GRC, Services, Offensive, Fraud, Other
 # stage: Public, Late-stage, Growth, Early, Acquired
 # hq: true = headquartered in Austin; false = major Austin office or Austin-based founders
-# featured: true = shown on the home page (independent companies up top, acquired ones under Exits)
+# featured: true = shown on the home page (independent companies only)
 # acquired_by: acquirer and year, shown for acquired companies
 # Last verified: 2026-10-20
 
@@ -13,28 +13,28 @@
   category: Endpoint
   stage: Public
   hq: true
-  description: "Cloud-native endpoint and XDR platform; HQ moved to Austin in 2021."
+  description: "Falcon platform that stops breaches across endpoints, cloud workloads, identities, and AI systems"
 - name: SailPoint
   url: https://www.sailpoint.com
   careers_url: https://www.sailpoint.com/company/careers
   category: Identity
   stage: Public
   hq: true
-  description: "Identity security and governance."
+  description: "Identity security that discovers, governs, and secures access for human and non-human identities"
 - name: Forcepoint
   url: https://www.forcepoint.com
   careers_url: https://www.forcepoint.com/company/work-with-us
   category: Data Security
   stage: Late-stage
   hq: true
-  description: "Data-first security: DLP, SSE and data security posture management."
+  description: "Data security that finds sensitive data and stops leaks across cloud, web, email, and AI tools"
 - name: NinjaOne
   url: https://www.ninjaone.com
   careers_url: https://www.ninjaone.com/careers/
   category: Endpoint
   stage: Late-stage
   hq: true
-  description: "Endpoint management and patching platform."
+  description: "IT operations platform for endpoint management, patching, backup, and remote access in one console"
 - name: SolarWinds
   acquired_by: "Turn/River Capital (2025)"
   url: https://www.solarwinds.com
@@ -42,14 +42,14 @@
   category: Other
   stage: Acquired
   hq: true
-  description: "IT observability and security software; taken private by Turn/River in 2025."
+  description: "Observability and IT management software for applications, networks, databases, and hybrid infrastructure"
 - name: Halcyon
   url: https://www.halcyon.ai
   careers_url: https://www.halcyon.ai/careers
   category: Endpoint
   stage: Late-stage
   hq: true
-  description: "Anti-ransomware platform: prevention, resilience and recovery."
+  description: "Anti-ransomware platform that prevents, detects, and recovers from ransomware encryption and data theft"
 - name: SpyCloud
   featured: true
   url: https://spycloud.com
@@ -57,28 +57,28 @@
   category: Threat Intel
   stage: Late-stage
   hq: true
-  description: "Recaptured darknet identity data to prevent account takeover and fraud."
+  description: "Finds stolen credentials and identity data from the dark web to stop account takeover and fraud"
 - name: Ontic
   url: https://ontic.co
   careers_url: https://ontic.co/company/careers/
   category: Other
   stage: Late-stage
   hq: true
-  description: "Protective intelligence platform for physical threat and incident management."
+  description: "Security management software that tracks and responds to physical threats to people, workplaces, and assets"
 - name: Invicti
   url: https://www.invicti.com
   careers_url: https://www.invicti.com/careers
   category: AppSec
   stage: Late-stage
   hq: true
-  description: "DAST and API security testing (Acunetix, Netsparker lineage)."
+  description: "Application security testing that finds and prioritizes vulnerabilities in web applications and APIs"
 - name: SEON
   url: https://seon.io
   careers_url: https://seon.io/careers/
   category: Fraud
   stage: Late-stage
   hq: true
-  description: "Fraud prevention and AML platform; founded in Budapest, HQ in Austin."
+  description: "Fraud and anti-money-laundering detection across onboarding, payments, and ongoing transaction monitoring"
 - name: Praetorian
   featured: true
   url: https://www.praetorian.com
@@ -86,7 +86,7 @@
   category: Offensive
   stage: Growth
   hq: true
-  description: "Offensive security firm and Chariot exposure management platform."
+  description: "Continuous offensive security testing that finds exploitable weaknesses before attackers do"
 - name: HiddenLayer
   featured: true
   url: https://www.hiddenlayer.com
@@ -94,66 +94,67 @@
   category: Other
   stage: Growth
   hq: true
-  description: "Security platform for AI models and deployments."
+  description: "Security for AI models and agentic, generative, and predictive AI applications across their lifecycle"
 - name: CertifID
   url: https://www.certifid.com
   careers_url: https://www.certifid.com/company/careers
   category: Fraud
   stage: Growth
   hq: true
-  description: "Wire fraud prevention for real estate transactions."
+  description: "Wire fraud prevention and payment verification for real estate closings, buyers, sellers, and agents"
 - name: Portnox
   url: https://www.portnox.com
   careers_url: https://portnox.pinpointhq.com/
   category: Network
   stage: Growth
   hq: true
-  description: "Cloud-native NAC and zero-trust access; US HQ in Austin."
+  description: "Cloud-native network access control and zero trust access for users, devices, and applications"
 - name: Living Security
   url: https://www.livingsecurity.com
   careers_url: https://www.livingsecurity.com/about-us/careers-and-culture
   category: GRC
   stage: Growth
   hq: true
-  description: "Human risk management platform; hosts HRMCon in Austin."
+  description: "Human risk management that finds the riskiest employees and targets training and remediation to them"
 - name: Brinqa
   url: https://www.brinqa.com
   category: GRC
   stage: Growth
   hq: true
-  description: "Unified exposure and risk-based vulnerability management."
+  description: "Exposure management that correlates vulnerability data to prioritize remediation across the environment"
 - name: ALTR
   url: https://altr.com
   careers_url: https://altr.com/careers/
   category: Data Security
   stage: Growth
   hq: true
-  description: "Data access governance and security for cloud data platforms."
+  description: "Data security that classifies, masks, encrypts, and monitors access to sensitive data across cloud stacks"
 - name: Theori
   url: https://theori.io
   category: Offensive
   stage: Growth
   hq: true
-  description: "Offensive security research, AI AppSec and Dreamhack training."
+  description: "Offensive security research and automated vulnerability discovery for applications, AI systems, and networks"
 - name: Exodus Intelligence
   url: https://blog.exodusintel.com
   category: Offensive
   stage: Growth
   hq: true
-  description: "Zero-day and n-day vulnerability research and exploit intelligence."
+  description: "Zero-day and N-day vulnerability research with exploit intelligence and detection rules for defenders"
 - name: atsec information security
   url: https://www.atsec.com
   category: Services
   stage: Growth
   hq: true
-  description: "Common Criteria, FIPS and security evaluation lab."
+  description: "Independent lab for security testing, evaluation, and certification of IT and cryptographic products"
 - name: Mallory
+  featured: true
   url: https://mallory.ai
   careers_url: https://mallory.ai/careers
   category: Threat Intel
   stage: Early
   hq: true
-  description: "AI-native threat intelligence and exposure management platform."
+  description: "Threat and exposure management that matches threat intelligence against your attack surface"
 - name: Nudge Security
   featured: true
   url: https://www.nudgesecurity.com
@@ -161,7 +162,7 @@
   category: Cloud
   stage: Early
   hq: true
-  description: "SaaS and workforce AI security governance."
+  description: "Discovers and secures SaaS and AI apps, including shadow IT, by guiding employee behavior"
 - name: Command Zero
   featured: true
   url: https://www.commandzero.ai
@@ -169,7 +170,7 @@
   category: Other
   stage: Early
   hq: true
-  description: "AI-assisted cyber investigation platform for SOCs."
+  description: "Autonomous investigation of security alerts and incidents for SOC teams"
 - name: Spektion
   featured: true
   url: https://spektion.com
@@ -177,98 +178,94 @@
   category: Endpoint
   stage: Early
   hq: true
-  description: "Runtime-based software vulnerability and exposure management."
+  description: "Endpoint vulnerability management that finds exploitable software risks, including flaws without CVEs"
 - name: Evoke Security
   url: https://www.evokesecurity.com
   category: Other
   stage: Early
   hq: true
-  description: "Discovery and governance for enterprise AI agents."
+  description: "Detection and response for AI agents across endpoints, web, and cloud"
 - name: Trustwise
   url: https://trustwise.ai
   category: Other
   stage: Early
   hq: true
-  description: "Runtime trust and control layer for enterprise AI agents."
+  description: "Runtime control that authorizes AI agent actions against enterprise policy before they execute"
 - name: Veridise
   url: https://veridise.com
   careers_url: https://veridise.com/careers/
   category: AppSec
   stage: Early
   hq: true
-  description: "Blockchain and ZK security audits using formal methods."
+  description: "Smart contract audits and formal-methods tools for blockchain, DeFi, and zero-knowledge systems"
 - name: Clarity Security
   url: https://claritysecurity.com
   category: Identity
   stage: Early
   hq: true
-  description: "Identity governance and administration (IGA) SaaS."
+  description: "Identity governance that discovers and remediates risk across human, non-human, and AI identities"
 - name: BalkanID
   url: https://www.balkan.id
   careers_url: https://www.balkan.id/careers
   category: Identity
   stage: Early
   hq: true
-  description: "AI-powered identity governance for SaaS and public cloud."
+  description: "Identity governance for access reviews, lifecycle management, and non-human and AI identities"
 - name: HackNotice
   url: https://hacknotice.com
   category: Threat Intel
   stage: Early
   hq: true
-  description: "Breach and dark-web exposure monitoring for employees and vendors."
+  description: "Monitors breaches, leaked credentials, and dark-web exposure affecting employees and third-party vendors"
 - name: runZero
-  featured: true
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.runzero.com
   category: Network
   stage: Acquired
   hq: true
-  description: "Exposure and asset discovery; acquired by Accenture/Dragos (2026)."
+  description: "Asset discovery and exposure management across IT, OT, IoT, cloud, and mobile"
 - name: NetRise
-  featured: true
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.netrise.io
   category: Other
   stage: Acquired
   hq: true
-  description: "Firmware and software supply-chain risk; acquired by Accenture/Dragos (2026)."
+  description: "Analyzes compiled software and firmware to build SBOMs and find hidden supply chain risks"
 - name: Sevco Security
-  featured: true
   acquired_by: "Arctic Wolf (2026)"
   url: https://www.sevcosecurity.com
   category: Other
   stage: Acquired
   hq: true
-  description: "Asset intelligence and exposure assessment; acquired by Arctic Wolf (2026)."
+  description: "Asset intelligence that finds devices missing security tools, agents, or management across IT and cloud"
 - name: RunReveal
-  featured: true
   acquired_by: "ClickHouse (2026)"
   url: https://runreveal.com
   category: Other
   stage: Acquired
   hq: true
-  description: "Security data platform and SIEM; acquired by ClickHouse (2026)."
+  description: "Security log management and detection that unifies log ingestion, threat detection, and response"
 - name: Evo Security
   acquired_by: "Barracuda (2026)"
   url: https://www.evosecurity.com
   category: Identity
   stage: Acquired
   hq: true
-  description: "MSP-focused identity and privileged access; acquired by Barracuda (2026)."
+  description: "Multi-tenant MFA, SSO, and privileged access management built for managed service providers"
 - name: Closinglock
   acquired_by: "CertifID (2026)"
   url: https://www.closinglock.com
   category: Fraud
   stage: Acquired
   hq: true
-  description: "Real estate transaction fraud prevention; acquired by CertifID (2026)."
+  description: "Secure payments and wire fraud prevention for real estate closings and title companies"
 - name: Verosint
   acquired_by: "Imprivata"
   url: https://www.verosint.com
   category: Fraud
   stage: Acquired
   hq: true
-  description: "Account fraud detection (formerly 443ID); acquired by Imprivata."
+  description: "Identity threat detection that spots account takeover, fake accounts, and fraud at login"
 
 - name: Perpetual Systems
   url: https://www.perpetualsystems.com
@@ -276,43 +273,42 @@
   category: Other
   stage: Early
   hq: true
-  description: "AI-native SIEM running on a security data lake in your own cloud."
+  description: "Security data lake with an AI agent that triages and investigates SOC alerts"
 - name: Ghost Security
   url: https://ghostsecurity.ai
   featured: true
   category: AppSec
   stage: Early
   hq: true
-  description: "Agentic application and API security for cloud apps."
+  description: "Autonomous security agents for application security that run inside your own infrastructure"
 - name: DryRun Security
   url: https://www.dryrun.security
   featured: true
   category: AppSec
   stage: Early
   hq: true
-  description: "AI-powered contextual code security analysis."
+  description: "Reviews pull requests for security flaws in both human-written and AI-generated code"
 - name: Riscosity
   url: https://www.riscosity.com
   featured: true
   category: Data Security
   stage: Early
   hq: true
-  description: "Data-flow security and third-party data observability."
+  description: "Data firewall that monitors and controls sensitive data flowing to AI and third-party vendors"
 - name: Recon InfoSec
   url: https://www.reconinfosec.com
   featured: true
   category: Services
   stage: Early
   hq: true
-  description: "Managed detection and response, incident response, and OpenSOC training."
+  description: "Managed detection and response and security operations for mid-market companies"
 - name: Keep Aware
   url: https://keepaware.com
-  featured: true
   acquired_by: "Jamf (2026)"
   category: Endpoint
   stage: Acquired
   hq: true
-  description: "Browser detection and response; acquired by Jamf (2026)."
+  description: "Browser security that detects threats and prevents data loss in web and AI tools"
 
 - name: Eve Security
   url: https://eve.security
@@ -320,30 +316,28 @@
   category: Other
   stage: Early
   hq: true
-  description: "Runtime security and governance for enterprise AI agents."
+  description: "Runtime firewall that checks AI agent actions against policy before they execute"
 - name: Chaotic Good Information Security
   url: https://www.chaoticgoodinfosec.com
   featured: true
   category: Offensive
   stage: Early
   hq: true
-  description: "Specialized penetration testing firm."
+  description: "Penetration testing, executive hardening, and continuous offensive security assessments"
 - name: Infocyte
   url: https://www.datto.com
-  featured: true
   acquired_by: "Datto (2022)"
   category: Endpoint
   stage: Acquired
   hq: true
-  description: "Threat hunting, EDR and MDR for MSPs; acquired by Datto (2022)."
+  description: "Endpoint threat hunting and EDR that finds malware and attackers already inside networks"
 - name: Passage
   url: https://passage.1password.com
-  featured: true
   acquired_by: "1Password (2022)"
   category: Identity
   stage: Acquired
   hq: true
-  description: "Passkey-first authentication; acquired by 1Password (2022)."
+  description: "Passkey and passwordless login SDKs and APIs for developers adding authentication to apps"
 
 # --- Major Austin offices / Austin-based founders ---
 - name: Cloudflare
@@ -352,91 +346,89 @@
   category: Network
   stage: Public
   hq: false
-  description: "Connectivity cloud; large downtown Austin office."
+  description: "Global network providing CDN, DDoS protection, WAF, and zero trust access for websites and apps"
 - name: Rapid7
   url: https://www.rapid7.com
   careers_url: https://careers.rapid7.com/
   category: Other
   stage: Public
   hq: false
-  description: "Security operations and exposure management; downtown Austin office."
+  description: "Threat detection, vulnerability management, and managed detection and response for security teams"
 - name: Ping Identity
   url: https://www.pingidentity.com
   careers_url: https://www.pingidentity.com/en/company/careers.html
   category: Identity
   stage: Acquired
   hq: false
-  description: "Identity and access management; Denver HQ with Austin office."
+  description: "Identity and access management for employees, partners, and customer logins"
 - name: Thales Cloud Protection & Licensing
   url: https://cpl.thalesgroup.com
   category: Data Security
   stage: Public
   hq: false
-  description: "Encryption, key management and HSMs; Thales unit based in Austin."
+  description: "Data encryption, key management, identity, application security, and software licensing for enterprises"
 - name: IBM X-Force Red
   url: https://www.ibm.com/x-force
   category: Offensive
   stage: Public
   hq: false
-  description: "IBM's offensive security team, with a lead lab in Austin."
+  description: "IBM's offensive security team doing penetration testing and adversary simulation across apps, networks, and AI"
 - name: Hypori
   url: https://www.hypori.com
   careers_url: https://www.hypori.com/company/careers
   category: Endpoint
   stage: Growth
   hq: false
-  description: "Secure virtual mobile workspace for BYOD; Austin tech hub."
+  description: "Virtual mobile workspace giving secure enterprise app access on personal devices without touching personal data"
 - name: Absolute Security
   url: https://www.absolute.com
   careers_url: https://www.absolute.com/company/careers
   category: Endpoint
   stage: Acquired
   hq: false
-  description: "Endpoint resilience and persistence firmware; Austin office."
+  description: "Firmware-embedded endpoint resilience that detects threats, isolates devices, and restores them to secure states"
 - name: AttackIQ
   url: https://www.attackiq.com
   category: Offensive
   stage: Late-stage
   hq: false
-  description: "Breach and attack simulation; Austin-based co-founder."
+  description: "Breach and attack simulation that emulates adversaries to continuously test security controls"
 - name: Synack
   url: https://www.synack.com
   acquired_by: "Merged with NetSPI (2026)"
   category: Offensive
   stage: Acquired
   hq: false
-  description: "Crowdsourced penetration testing; merged with NetSPI (2026)."
+  description: "Crowdsourced penetration testing combining vetted researchers and automation for continuous vulnerability discovery"
 - name: Fleet
   url: https://fleetdm.com
   category: Endpoint
   stage: Growth
   hq: false
-  description: "Open-source device management built on osquery; Austin-based CEO."
+  description: "Open-source device management and osquery-based visibility for macOS, Windows, Linux, iOS, and Android"
 - name: Root Evidence
   url: https://rootevidence.com
   category: Other
   stage: Early
   hq: false
-  description: "Evidence-based vulnerability management; Austin-based co-founder."
+  description: "Vulnerability scanning and reporting backed by a warranty covering cyber losses"
 - name: Hydden
   url: https://hydden.com
   category: Identity
   stage: Early
   hq: false
-  description: "Identity system of record for humans, agents, and machine identities."
+  description: "Identity discovery and visibility across human users, service accounts, and AI agents"
 - name: Siemplify
   url: https://cloud.google.com/security/products/security-orchestration-automation-response
-  featured: true
   acquired_by: "Google (2022)"
   category: Other
   stage: Acquired
   hq: false
-  description: "Security orchestration and automation (SOAR); acquired by Google (2022); Austin-based founder."
+  description: "SOAR platform automating alert triage, case management, and incident response for SOCs"
 - name: InQuest
   url: https://www.opswat.com
-  featured: true
   acquired_by: "OPSWAT (2024)"
   category: Threat Intel
   stage: Acquired
   hq: false
-  description: "Network detection and file threat analysis; acquired by OPSWAT (2024); Austin-based founder."
+  description: "Network threat detection using deep file inspection and retrohunting for government and enterprise networks"
