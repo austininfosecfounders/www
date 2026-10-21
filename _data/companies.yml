@@ -392,6 +392,13 @@
   stage: Acquired
   hq: true
   description: "Passkey and passwordless login SDKs and APIs for developers adding authentication to apps"
+- name: Intrigue
+  url: https://cloud.google.com/security/products/attack-surface-management
+  acquired_by: "Mandiant (2021)"
+  category: Offensive
+  stage: Acquired
+  hq: true
+  description: "Attack surface management that discovers and monitors an organization's internet-facing assets and exposures"
 
 # --- Major Austin offices / Austin-based founders ---
 - name: Cloudflare
