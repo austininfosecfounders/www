@@ -3,32 +3,134 @@ layout: page
 title: Austin Cybersecurity Events
 subtitle: Meetups and conferences around town
 permalink: /events/
+js:
+  - "/assets/js/events-calendar.js"
 share-title: "Austin Cybersecurity Meetups & Conferences"
 share-description: "Cybersecurity meetups and conferences in Austin, Texas, including AHA!, DC512, OWASP Austin, Austin ISSA, and LASCON."
 ---
 
-<p>Recurring meetups and annual conferences for the Austin security community. Founders: our own gatherings are on the <a href="https://austininfosecfounders.com/cal">meetup calendar</a>.</p>
+{%- assign feed_path = '/events/conferences.ics' | relative_url -%}
+{%- assign feed_host = site.url | default: 'https://www.austininfosecfounders.com' | remove: 'https://' | remove: 'http://' -%}
+{%- capture webcal %}webcal://{{ feed_host }}{{ feed_path }}{% endcapture -%}
+
+<p>
+  Recurring meetups and annual conferences for the Austin security community.
+  Founders: our own gatherings are on the
+  <a href="https://austininfosecfounders.com/cal">meetup calendar</a>.
+</p>
 
 <h2 id="meetups">Meetups &amp; groups</h2>
 <div class="ai-cards">
-{% for m in site.data.meetups %}
+  {% for m in site.data.meetups %}
   <a class="ai-card" href="{{ m.url }}" rel="noopener">
     <h3>{{ m.name }}</h3>
     <p>{{ m.description }}</p>
-    {% if m.cadence %}<div class="ai-meta">{{ m.cadence }}</div>{% endif %}
+    {% if m.cadence %}
+    <div class="ai-meta">{{ m.cadence }}</div>
+    {% endif %}
   </a>
-{% endfor %}
+  {% endfor %}
 </div>
 
-<h2 id="conferences">Conferences</h2>
-<div class="ai-cards">
-{% for c in site.data.conferences %}
-  <a class="ai-card" href="{{ c.url }}" rel="noopener">
-    <h3>{{ c.name }}</h3>
-    <p>{{ c.description }}</p>
-    {% if c.typical_month %}<div class="ai-meta">Usually {{ c.typical_month }}</div>{% endif %}
-  </a>
-{% endfor %}
+<div class="ai-section-head cal-head">
+  <h2 id="conferences">Conferences</h2>
+  <details class="cal-menu cal-subscribe">
+    <summary class="cal-btn">Subscribe</summary>
+    <div class="cal-menu-list">
+      <a
+        href="https://calendar.google.com/calendar/render?cid={{ webcal | url_encode }}"
+        target="_blank"
+        rel="noopener"
+        >Google Calendar</a
+      >
+      <a href="{{ webcal }}">Apple / Outlook (webcal)</a>
+      <a href="{{ feed_path }}" download>Download .ics</a>
+    </div>
+  </details>
+</div>
+<p class="cal-lede">
+  Every conference below as a calendar. Click a date or a name for details, or
+  subscribe to get new dates as we add them.
+</p>
+
+<div
+  id="conf-calendar"
+  class="cal"
+  data-site-url="{{ '/' | relative_url }}"
+  hidden
+>
+  <div class="cal-toolbar">
+    <div class="cal-nav">
+      <button
+        type="button"
+        class="cal-btn cal-icon"
+        data-nav="-1"
+        aria-label="Previous month"
+      >
+        &#8249;
+      </button>
+      <button
+        type="button"
+        class="cal-btn cal-icon"
+        data-nav="1"
+        aria-label="Next month"
+      >
+        &#8250;
+      </button>
+      <button type="button" class="cal-btn" data-nav="today">Today</button>
+      <h3 class="cal-title" aria-live="polite"></h3>
+    </div>
+    <div class="cal-views" role="group" aria-label="Calendar view">
+      <button
+        type="button"
+        class="cal-btn"
+        data-view="month"
+        aria-pressed="true"
+      >
+        Month
+      </button>
+      <button
+        type="button"
+        class="cal-btn"
+        data-view="list"
+        aria-pressed="false"
+      >
+        List
+      </button>
+    </div>
+  </div>
+  <div class="cal-strip" role="group" aria-label="Jump to month"></div>
+  <div class="cal-month" role="grid" aria-readonly="true"></div>
+  <div class="cal-list"></div>
+  <div class="cal-tba"></div>
 </div>
 
-<p>Running something we've missed? <a href="{{ '/contribute' | relative_url }}">Add it</a>.</p>
+<dialog class="cal-dialog" aria-labelledby="cal-dialog-title">
+  <div class="cal-dialog-body"></div>
+</dialog>
+
+<script id="conference-events" type="application/json">
+  {{ site.data.conference_events | jsonify }}
+</script>
+<script id="conference-list" type="application/json">
+  {{ site.data.conferences | jsonify }}
+</script>
+
+<noscript>
+  <div class="ai-cards">
+    {% for c in site.data.conferences %}
+    <a class="ai-card" href="{{ c.url }}" rel="noopener">
+      <h3>{{ c.name }}</h3>
+      <p>{{ c.description }}</p>
+      {% if c.typical_month %}
+      <div class="ai-meta">Usually {{ c.typical_month }}</div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</noscript>
+
+<p>
+  Running something we've missed?
+  <a href="{{ '/contribute' | relative_url }}">Add it</a>.
+</p>
