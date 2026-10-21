@@ -5,6 +5,7 @@ layout: base
 {% assign companies = site.data.companies %}
 {% assign hq = companies | where: "hq", true %}
 {% assign hiring = companies | where_exp: "co", "co.careers_url" %}
+{% assign acquired = companies | where: "stage", "Acquired" %}
 
 <section class="ai-hero">
   <div class="container-md">
@@ -15,12 +16,13 @@ layout: base
       <a class="ai-btn ai-btn-primary" href="{{ '/companies' | relative_url }}">Browse companies</a>
       <a class="ai-btn ai-btn-ghost" href="{{ '/jobs' | relative_url }}">Find a job</a>
     </div>
-    <dl class="ai-stats">
-      <div><dt>{{ companies | size }}</dt><dd>security companies</dd></div>
-      <div><dt>{{ hq | size }}</dt><dd>headquartered here</dd></div>
-      <div><dt>{{ site.data.meetups | size }}</dt><dd>recurring meetups</dd></div>
-      <div><dt>{{ site.data.investors | size }}</dt><dd>local investors</dd></div>
-    </dl>
+    <nav class="ai-stats" aria-label="Community stats">
+      <a href="{{ '/companies/' | relative_url }}"><span class="ai-stat-num">{{ companies | size }}</span><span class="ai-stat-label">security companies</span></a>
+      <a href="{{ '/companies/?hq=true' | relative_url }}"><span class="ai-stat-num">{{ hq | size }}</span><span class="ai-stat-label">headquartered here</span></a>
+      <a href="{{ '/companies/?stage=Acquired' | relative_url }}"><span class="ai-stat-num">{{ acquired | size }}</span><span class="ai-stat-label">acquisitions</span></a>
+      <a href="{{ '/events/' | relative_url }}"><span class="ai-stat-num">{{ site.data.meetups | size }}</span><span class="ai-stat-label">recurring meetups</span></a>
+      <a href="{{ '/investors/' | relative_url }}"><span class="ai-stat-num">{{ site.data.investors | size }}</span><span class="ai-stat-label">local investors</span></a>
+    </nav>
   </div>
 </section>
 
