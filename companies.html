@@ -30,22 +30,19 @@ js:
 </div>
 <div id="company-count" class="ai-count"></div>
 
-<table class="ai-table" id="company-table">
-  <thead>
-    <tr><th>Company</th><th class="ai-hide-sm">What they do</th><th>Category</th><th class="ai-hide-sm">Stage</th><th>Jobs</th></tr>
-  </thead>
-  <tbody>
-  {% for co in companies %}
-    <tr data-row data-category="{{ co.category }}" data-stage="{{ co.stage }}" data-hq="{{ co.hq }}">
-      <td>
-        <div class="ai-co">{% include logo.html item=co size="sm" %}<a href="{{ co.url }}" rel="noopener">{{ co.name }}</a></div>
-        {% if co.hq %}<span class="ai-tag ai-tag-hq">Austin HQ</span>{% endif %}
-      </td>
-      <td class="ai-desc ai-hide-sm">{{ co.description }}</td>
-      <td><span class="ai-tag">{{ co.category }}</span></td>
-      <td class="ai-hide-sm">{{ co.stage }}{% if co.acquired_by %}<div class="ai-meta">by {{ co.acquired_by }}</div>{% endif %}</td>
-      <td>{% if co.careers_url %}<a href="{{ co.careers_url }}" rel="noopener">Careers</a>{% endif %}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+<ul class="ai-dir" id="company-table">
+{% for co in companies %}
+  <li class="ai-dir-item" data-row data-category="{{ co.category }}" data-stage="{{ co.stage }}" data-hq="{{ co.hq }}">
+    {% include logo.html item=co %}
+    <div class="ai-dir-body">
+      <h3 class="ai-dir-name"><a href="{{ co.url }}" rel="noopener">{{ co.name }}</a>{% if co.hq %} <span class="ai-tag ai-tag-hq">Austin HQ</span>{% endif %}</h3>
+      <p class="ai-dir-desc">{{ co.description }}</p>
+      <div class="ai-dir-meta">
+        <span class="ai-tag">{{ co.category }}</span>
+        <span>{{ co.stage }}{% if co.acquired_by %} by {{ co.acquired_by }}{% endif %}</span>
+      </div>
+    </div>
+    {% if co.careers_url %}<a class="ai-dir-jobs" href="{{ co.careers_url }}" rel="noopener">Careers <span aria-hidden="true">&rarr;</span></a>{% endif %}
+  </li>
+{% endfor %}
+</ul>
