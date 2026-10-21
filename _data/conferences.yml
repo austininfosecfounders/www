@@ -1,34 +1,95 @@
 # Security conferences in/near Austin. Last verified: 2026-10-20
 # BSides Austin omitted: bsidesaustin.com says the event is on hold.
+#
+# Each edition becomes a calendar entry (see _plugins/conference_calendar.rb).
+#   start / end    YYYY-MM-DD, quoted; end defaults to start
+#   start_time     24h local Austin time, optional; end_time may be "00:00" for midnight
+#   url            edition-specific link (tickets/registration); falls back to the conference url
+#   note           optional extra detail shown in the event dialog
+# Conferences with no upcoming edition show as "dates not yet announced".
 - name: LASCON
   url: https://lascon.org/
   typical_month: October
   description: "Lonestar Application Security Conference, run by OWASP Austin, with training days beforehand."
+  editions:
+    - start: "2026-10-29"
+      end: "2026-10-30"
+      start_time: "08:00"
+      end_time: "17:00"
+      venue: Norris Conference Centers
+      address: "2525 W Anderson Ln, Suite 365, Austin, TX 78757"
+      url: https://lascon.org/tickets/
+      note: "Training days run Oct 27–28, 8 AM–5 PM, with separate tickets."
 - name: Austin Hacker Hoedown
   url: https://www.hackerhoedown.com/
   typical_month: "November/December"
   description: "Free evening of lightning talks, drinks and BBQ."
+  editions:
+    - start: "2025-11-06"
+      start_time: "18:00"
+      end_time: "23:59"
+    - start: "2026-12-05"
+      start_time: "18:00"
+      end_time: "00:00"
+      venue: San Jac Saloon
+      address: "300 E 6th St, Austin, TX 78701"
+      note: "Lightning talks start around 7:30 PM."
 - name: Ringzer0
   url: https://ringzer0.training/
   typical_month: March
-  description: "Reverse engineering and vulnerability research training, historically held in Austin."
+  description: "Reverse engineering and vulnerability research training, historically held in Austin. 2026 editions were virtual and in Ottawa."
+  editions:
+    - start: "2025-03-18"
+      end: "2025-03-22"
+      venue: Thompson Conference Center, UT Austin
+      url: https://ringzer0.training/bootstrap25/
+      note: "BOOTSTRAP25: four training days followed by a conference day."
 - name: InnoTech Austin + ISSA Security Summit
   url: https://www.innotechaustin.com/securitysummit
   typical_month: May
   description: "Regional IT conference with a full-day security track run by Austin ISSA."
+  editions:
+    - start: "2026-05-12"
+      start_time: "08:00"
+      end_time: "16:00"
+      venue: Palmer Events Center
+      address: "900 Barton Springs Rd, Austin, TX 78704"
 - name: Official Cybersecurity Summit - Austin
   url: https://cyberriskalliance.swoogo.com/Austin-2026
   typical_month: June
   description: "CISO and practitioner summit."
+  editions:
+    - start: "2026-06-11"
+      start_time: "08:00"
+      end_time: "18:00"
+      venue: JW Marriott Austin
+      address: "110 E 2nd St, Austin, TX 78701"
 - name: HRMCon
   url: https://www.livingsecurity.com/human-risk-management-conference-hrmcon-2026-living-security
   typical_month: September
   description: "Living Security's free Human Risk Management conference."
+  editions:
+    - start: "2026-09-10"
+      venue: The University of Texas Club
+      address: "2108 Robert Dedman Dr, Austin, TX 78712"
 - name: Lone Star Cyber Summit
   url: https://lonestar.cyberseries.io/
   typical_month: October
   description: "Executive security leadership summit in downtown Austin."
+  editions:
+    - start: "2026-10-20"
+      end: "2026-10-21"
+      venue: Courtyard by Marriott Austin Downtown/Convention Center
+      address: "300 E 4th St, Austin, TX 78701"
+      url: https://lonestar.cyberseries.io/register/
 - name: TechNexus Austin
   url: https://technexusevents.com/conferences/technexus-austin/
   typical_month: November
   description: "One-day IT and cybersecurity leadership conference."
+  editions:
+    - start: "2026-11-18"
+      start_time: "08:00"
+      end_time: "18:00"
+      venue: Hyatt Regency Austin
+      address: "208 Barton Springs Rd, Austin, TX 78704"
+      url: https://technexusevents.com/register/
