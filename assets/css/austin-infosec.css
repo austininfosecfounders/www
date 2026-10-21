@@ -164,3 +164,4 @@ main .ai-exits li a:hover { color: var(--ai-accent-ink); }
 .ai-exit-arrow { color: var(--ai-accent); }
 .ai-exit-to { color: var(--ai-text); }
 .ai-exits .ai-meta { margin-left: auto; font-size: .72rem; color: var(--ai-muted); }
+.ai-table td .ai-meta { font-size: .72rem; color: var(--ai-muted); margin-top: .15rem; }
