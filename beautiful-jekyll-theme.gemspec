@@ -24,6 +24,11 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "kramdown", "~> 2.3"
   spec.add_runtime_dependency "webrick", "~> 1.8"
   spec.add_runtime_dependency "bigdecimal"
+  # No longer default gems as of Ruby 4.0
+  spec.add_runtime_dependency "logger"
+  spec.add_runtime_dependency "csv"
+  spec.add_runtime_dependency "base64"
+  spec.add_runtime_dependency "ostruct"
 
   spec.add_development_dependency "bundler", ">= 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
