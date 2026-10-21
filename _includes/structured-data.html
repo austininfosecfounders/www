@@ -1,0 +1,156 @@
+{%- comment -%}
+  JSON-LD structured data. The home page describes the site and organization;
+  directory pages describe their entries as an ItemList.
+{%- endcomment -%}
+{%- capture austin -%}{"@type": "Place", "name": "Austin, Texas", "address": {"@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"}}{%- endcapture -%}
+
+{%- if page.layout == "landing" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ '/' | absolute_url }}#website",
+      "url": "{{ '/' | absolute_url }}",
+      "name": {{ site.title | jsonify }},
+      "description": {{ page.share-description | jsonify }},
+      "inLanguage": "en-US",
+      "publisher": { "@id": "{{ '/' | absolute_url }}#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ '/' | absolute_url }}#org",
+      "name": {{ site.title | jsonify }},
+      "url": "{{ '/' | absolute_url }}",
+      "logo": "{{ site.brand-logo | absolute_url }}",
+      "areaServed": {{ austin }},
+      "knowsAbout": ["Cybersecurity", "Information security", "Security startups", "Austin, Texas"],
+      "sameAs": ["https://github.com/{{ site.social-network-links.github }}"]
+    }
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- if page.url == "/companies/" %}
+{%- assign items = site.data.companies | sort_natural: "name" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.share-title | default: page.title | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "about": {{ austin }},
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ items | size }},
+    "itemListElement": [
+      {%- for co in items %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "Organization",
+          "name": {{ co.name | jsonify }},
+          "url": {{ co.url | jsonify }},
+          "description": {{ co.description | jsonify }}
+          {%- if co.logo %}, "logo": "{{ co.logo | absolute_url }}"{% endif %}
+          {%- if co.hq %}, "location": {{ austin }}{% endif %}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+{%- endif -%}
+
+{%- if page.url == "/investors/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.share-title | default: page.title | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "about": {{ austin }},
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ site.data.investors | size }},
+    "itemListElement": [
+      {%- for inv in site.data.investors %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "Organization",
+          "name": {{ inv.name | jsonify }},
+          "url": {{ inv.url | jsonify }},
+          "description": {{ inv.description | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+{%- endif -%}
+
+{%- if page.url == "/events/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.share-title | default: page.title | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "about": {{ austin }},
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Austin cybersecurity meetups",
+    "numberOfItems": {{ site.data.meetups | size }},
+    "itemListElement": [
+      {%- for m in site.data.meetups %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "Organization",
+          "name": {{ m.name | jsonify }},
+          "url": {{ m.url | jsonify }},
+          "description": {{ m.description | jsonify }},
+          "location": {{ austin }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+{%- endif -%}
+
+{%- if page.url == "/jobs/" %}
+{%- assign today = site.time | date: "%Y-%m-%d" %}
+{%- for job in site.data.jobs %}
+{%- assign expires = job.expires | date: "%Y-%m-%d" %}
+{%- if expires >= today %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": {{ job.title | jsonify }},
+  "description": {{ job.description | default: job.title | jsonify }},
+  "datePosted": "{{ job.posted | date: '%Y-%m-%d' }}",
+  "validThrough": "{{ expires }}",
+  "hiringOrganization": { "@type": "Organization", "name": {{ job.company | jsonify }} },
+  "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US" } },
+  {%- assign loc = job.location | downcase %}
+  {%- if loc contains "remote" %}
+  "jobLocationType": "TELECOMMUTE",
+  "applicantLocationRequirements": { "@type": "Country", "name": "US" },
+  {%- endif %}
+  "url": {{ job.url | jsonify }}
+}
+</script>
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}

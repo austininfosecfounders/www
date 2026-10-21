@@ -3,6 +3,8 @@ layout: page
 title: Founder Resources
 permalink: /founders/resources/
 subtitle: Helpful information for security founders
+share-title: "Resources for Cybersecurity Founders"
+share-description: "Resources for cybersecurity startup founders in Austin: fundraising, hiring, go-to-market, and links shared by the Austin Infosec Founders group."
 ---
 
 ## Public Resources

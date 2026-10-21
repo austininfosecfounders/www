@@ -50,6 +50,10 @@
   <meta name="theme-color" content="{{ site.mobile-theme-col }}">
   {% endif %}
 
+  {% if page.noindex %}
+  <meta name="robots" content="noindex, follow">
+  {% endif %}
+
   {% if site.keywords %}
   <meta name="keywords" content="{{ site.keywords }}">
   {% endif %}
@@ -115,6 +119,8 @@
       {{ page.thumbnail-img }}
     {%- elsif site.avatar -%}
       {{ site.avatar }}
+    {%- elsif site.share-img-default -%}
+      {{ site.share-img-default }}
     {% endif %}
   {%- endcapture -%}
   {%- assign img=img | strip -%}
@@ -145,8 +151,10 @@
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
+  {% if site.social-network-links.twitter %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+  {% endif %}
 
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
@@ -165,6 +173,8 @@
   {% if favicon_exists == 1 %}
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
   {% endif %}
+
+  {% include structured-data.html %}
 
   {% if page.head-extra %}
     {% for file in page.head-extra %}

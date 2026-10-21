@@ -12,6 +12,12 @@
 # Name of website
 title: Austin Infosec
 
+# Canonical production URL: used for the sitemap, robots.txt, canonical links and Open Graph URLs
+url: "https://www.austininfosecfounders.com"
+
+# Default social share image when a page sets no share-img
+share-img-default: "/assets/img/og-default.png"
+
 # Your name to show in the footer
 author: Austin Infosec
 
@@ -129,7 +135,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "austin,infosec,security,cybersecurity,companies,jobs,meetups,founders,texas"
+keywords: "austin cybersecurity,austin infosec,austin security companies,austin cybersecurity jobs,austin security meetups,austin cybersecurity startups,texas cybersecurity"
 
 ######################################
 # --- Colours / background image --- #
