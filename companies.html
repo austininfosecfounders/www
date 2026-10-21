@@ -43,7 +43,7 @@ js:
       </td>
       <td class="ai-desc ai-hide-sm">{{ co.description }}</td>
       <td><span class="ai-tag">{{ co.category }}</span></td>
-      <td class="ai-hide-sm">{{ co.stage }}</td>
+      <td class="ai-hide-sm">{{ co.stage }}{% if co.acquired_by %}<div class="ai-meta">by {{ co.acquired_by }}</div>{% endif %}</td>
       <td>{% if co.careers_url %}<a href="{{ co.careers_url }}" rel="noopener">Careers</a>{% endif %}</td>
     </tr>
   {% endfor %}
