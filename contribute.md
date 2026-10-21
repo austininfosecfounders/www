@@ -3,6 +3,7 @@ layout: page
 title: Contribute
 subtitle: Help keep the Austin security map current
 permalink: /contribute/
+share-description: "Add or update an Austin cybersecurity company, job, meetup, conference, or investor in the Austin Infosec directory."
 ---
 
 Everything on this site lives in plain YAML files in our [GitHub repo](https://github.com/austininfosecfounders/www). A pull request is the fastest way to add or fix something. Not a GitHub person? Email hello -a-t- austininfosecfounders.com with the same details.

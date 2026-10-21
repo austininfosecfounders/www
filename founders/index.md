@@ -3,6 +3,8 @@ layout: page
 title: Austin Infosec Founders
 subtitle: A private group for Austin's security founders
 permalink: /founders/
+share-title: "Austin Cybersecurity Founders Group"
+share-description: "A private community for current, former, and aspiring cybersecurity founders in Austin, Texas: a Signal group and regular meetups."
 ---
 
 Austin Infosec Founders is open to current founders, former founders, and aspiring founders, based in Austin.

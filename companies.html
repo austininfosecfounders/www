@@ -1,17 +1,19 @@
 ---
 layout: page
-title: Austin Security Companies
-subtitle: Security companies headquartered or building in Austin
+title: Austin Cybersecurity Companies
+subtitle: Cybersecurity companies headquartered or building in Austin, Texas
 permalink: /companies/
 js:
   - "/assets/js/directory-filter.js"
+share-title: "Austin Cybersecurity Companies Directory"
+share-description: "Directory of cybersecurity companies headquartered or building in Austin, Texas, from CrowdStrike and SailPoint to early-stage startups."
 ---
 
 {% assign companies = site.data.companies | sort_natural: "name" %}
 {% assign categories = site.data.companies | map: "category" | uniq | sort %}
 {% assign stages = site.data.companies | map: "stage" | uniq | sort %}
 
-<p>A community-maintained directory of information security companies with roots or real teams in Austin. Missing someone, or something out of date? <a href="{{ '/contribute' | relative_url }}">Send a fix</a>.</p>
+<p>A community-maintained directory of cybersecurity and information security companies with roots or real teams in Austin. Missing someone, or something out of date? <a href="{{ '/contribute' | relative_url }}">Send a fix</a>.</p>
 
 <div class="ai-filter" data-target="#company-table" data-count="#company-count">
   <input type="search" placeholder="Search companies…" aria-label="Search companies">
