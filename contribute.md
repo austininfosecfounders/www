@@ -19,6 +19,8 @@ Edit [`_data/companies.yml`](https://github.com/austininfosecfounders/www/edit/m
   stage: Early           # Public, Late-stage, Growth, Early, Acquired
   hq: true               # true if headquartered in Austin, false for a major Austin office
   description: One short, factual line about what the company does.
+  featured: true         # optional; maintainers pick the companies shown on the home page
+  acquired_by: Acme (2026)  # optional; for stage: Acquired
 ```
 
 We list security companies headquartered in Austin or with a real team here (not just a sales rep).

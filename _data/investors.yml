@@ -1,11 +1,19 @@
 # Austin investors active in security/infrastructure. Last verified: 2026-10-20
+# featured: true = shown on the home page
+- name: Runtime Ventures
+  url: https://www.runtime.vc
+  featured: true
+  description: "Austin seed fund focused exclusively on cybersecurity; $32M debut fund, $250K-$2M checks at pre-seed and seed."
 - name: Silverton Partners
+  featured: true
   url: https://www.silvertonpartners.com
   description: "Austin early-stage VC. Security portfolio includes SailPoint, Ping Identity, SpyCloud, Living Security, Clarity and Verosint."
 - name: LiveOak Ventures
+  featured: true
   url: https://liveoak.vc
   description: "Austin early-stage VC, pre-seed to Series B. Security portfolio includes Mallory, Spektion and Closinglock."
 - name: S3 Ventures
+  featured: true
   url: https://www.s3vc.com
   description: "Austin VC, seed to Series B. Co-led Arpio's Series A (cloud recovery and resilience)."
 - name: Next Coast Ventures
