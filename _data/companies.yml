@@ -2,6 +2,8 @@
 # category: Identity, Endpoint, Network, Cloud, AppSec, Threat Intel, Data Security, GRC, Services, Offensive, Fraud, Other
 # stage: Public, Late-stage, Growth, Early, Acquired
 # hq: true = headquartered in Austin; false = major Austin office
+# featured: true = shown on the home page (independent companies up top, acquired ones under Exits)
+# acquired_by: acquirer and year, shown for acquired companies
 # Last verified: 2026-10-20
 
 # --- Austin HQ ---
@@ -34,6 +36,7 @@
   hq: true
   description: "Endpoint management and patching platform."
 - name: SolarWinds
+  acquired_by: "Turn/River Capital (2025)"
   url: https://www.solarwinds.com
   careers_url: https://jobs.solarwinds.com/
   category: Other
@@ -48,6 +51,7 @@
   hq: true
   description: "Anti-ransomware platform: prevention, resilience and recovery."
 - name: SpyCloud
+  featured: true
   url: https://spycloud.com
   careers_url: https://spycloud.com/company/careers/
   category: Threat Intel
@@ -208,42 +212,51 @@
   hq: true
   description: "Breach and dark-web exposure monitoring for employees and vendors."
 - name: runZero
+  featured: true
+  acquired_by: "Accenture / Dragos (2026)"
   url: https://www.runzero.com
   category: Network
   stage: Acquired
   hq: true
   description: "Exposure and asset discovery; acquired by Accenture/Dragos (2026)."
 - name: NetRise
+  acquired_by: "Accenture / Dragos (2026)"
   url: https://www.netrise.io
   category: Other
   stage: Acquired
   hq: true
   description: "Firmware and software supply-chain risk; acquired by Accenture/Dragos (2026)."
 - name: Sevco Security
+  acquired_by: "Arctic Wolf (2026)"
   url: https://www.sevcosecurity.com
   category: Other
   stage: Acquired
   hq: true
   description: "Asset intelligence and exposure assessment; acquired by Arctic Wolf (2026)."
 - name: RunReveal
+  featured: true
+  acquired_by: "ClickHouse (2026)"
   url: https://runreveal.com
   category: Other
   stage: Acquired
   hq: true
   description: "Security data platform and SIEM; acquired by ClickHouse (2026)."
 - name: Evo Security
+  acquired_by: "Barracuda (2026)"
   url: https://www.evosecurity.com
   category: Identity
   stage: Acquired
   hq: true
   description: "MSP-focused identity and privileged access; acquired by Barracuda (2026)."
 - name: Closinglock
+  acquired_by: "CertifID (2026)"
   url: https://www.closinglock.com
   category: Fraud
   stage: Acquired
   hq: true
   description: "Real estate transaction fraud prevention; acquired by CertifID (2026)."
 - name: Verosint
+  acquired_by: "Imprivata"
   url: https://www.verosint.com
   category: Fraud
   stage: Acquired

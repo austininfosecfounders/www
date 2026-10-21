@@ -33,7 +33,7 @@ layout: base
       <a href="{{ '/companies' | relative_url }}">All {{ companies | size }} companies &rarr;</a>
     </div>
     <div class="ai-cards ai-featured">
-    {% assign featured = hq | where_exp: "co", "co.stage != 'Acquired'" | sample: 8 %}
+    {% assign featured = companies | where: "featured", true | where_exp: "co", "co.stage != 'Acquired'" %}
     {% for co in featured %}
       <a class="ai-card" href="{{ co.url }}" rel="noopener">
         <span class="ai-tag">{{ co.category }}</span>
@@ -78,6 +78,26 @@ layout: base
     </div>
     <a class="ai-btn ai-btn-primary" href="{{ '/founders' | relative_url }}">About the group</a>
   </section>
+
+  {% assign exits = companies | where: "featured", true | where: "stage", "Acquired" %}
+  {% if exits.size > 0 %}
+  <section class="ai-section">
+    <div class="ai-section-head">
+      <h2>Exits</h2>
+      <a href="{{ '/companies' | relative_url }}">All companies &rarr;</a>
+    </div>
+    <p class="ai-section-lede">Austin security companies that found a home. Their teams are still here, and a lot of them are building the next thing.</p>
+    <ul class="ai-exits">
+    {% for co in exits %}
+      <li>
+        <a href="{{ co.url }}" rel="noopener">{{ co.name }}</a>
+        <span class="ai-exit-arrow" aria-hidden="true">&rarr;</span>
+        <span class="ai-exit-to">{% if co.acquired_by %}{{ co.acquired_by }}{% else %}Acquired{% endif %}</span>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
   <section class="ai-section ai-split">
     <div>
