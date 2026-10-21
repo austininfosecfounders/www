@@ -8,7 +8,9 @@ permalink: /investors/
 <p>Austin-based venture firms, angel groups, and programs that back security and infrastructure companies. Being listed is not an endorsement — talk to founders they've backed. Members of <a href="{{ '/founders' | relative_url }}">Austin Infosec Founders</a> are happy to share notes.</p>
 
 <div class="ai-cards">
-{% for i in site.data.investors %}
+{% assign featured = site.data.investors | where: "featured", true %}{% assign rest = site.data.investors | where_exp: "i", "i.featured != true" %}
+{% assign investors = featured | concat: rest %}
+{% for i in investors %}
   <a class="ai-card" href="{{ i.url }}" rel="noopener">
     <h3>{{ i.name }}</h3>
     <p>{{ i.description }}</p>
