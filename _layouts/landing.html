@@ -1,0 +1,103 @@
+---
+layout: base
+---
+
+{% assign companies = site.data.companies %}
+{% assign hq = companies | where: "hq", true %}
+{% assign hiring = companies | where_exp: "co", "co.careers_url" %}
+
+<section class="ai-hero">
+  <div class="container-md">
+    <p class="ai-eyebrow">// austin, tx &middot; security community</p>
+    <h1>{{ page.headline | default: page.title }}</h1>
+    <p class="ai-hero-lede">{{ page.lede }}</p>
+    <div class="ai-hero-actions">
+      <a class="ai-btn ai-btn-primary" href="{{ '/companies' | relative_url }}">Browse companies</a>
+      <a class="ai-btn ai-btn-ghost" href="{{ '/jobs' | relative_url }}">Find a job</a>
+    </div>
+    <dl class="ai-stats">
+      <div><dt>{{ companies | size }}</dt><dd>security companies</dd></div>
+      <div><dt>{{ hq | size }}</dt><dd>headquartered here</dd></div>
+      <div><dt>{{ site.data.meetups | size }}</dt><dd>recurring meetups</dd></div>
+      <div><dt>{{ site.data.investors | size }}</dt><dd>local investors</dd></div>
+    </dl>
+  </div>
+</section>
+
+<main class="container-md ai-landing">
+  {{ content }}
+
+  <section class="ai-section">
+    <div class="ai-section-head">
+      <h2>Building in Austin</h2>
+      <a href="{{ '/companies' | relative_url }}">All {{ companies | size }} companies &rarr;</a>
+    </div>
+    <div class="ai-cards ai-featured">
+    {% assign featured = hq | where_exp: "co", "co.stage != 'Acquired'" | sample: 8 %}
+    {% for co in featured %}
+      <a class="ai-card" href="{{ co.url }}" rel="noopener">
+        <span class="ai-tag">{{ co.category }}</span>
+        <h3>{{ co.name }}</h3>
+        <p>{{ co.description }}</p>
+        <div class="ai-meta">{{ co.stage }}</div>
+      </a>
+    {% endfor %}
+    </div>
+  </section>
+
+  <section class="ai-section ai-split">
+    <div>
+      <div class="ai-section-head">
+        <h2>Meetups</h2>
+        <a href="{{ '/events' | relative_url }}">All events &rarr;</a>
+      </div>
+      <ul class="ai-list">
+      {% for m in site.data.meetups limit: 5 %}
+        <li><a href="{{ m.url }}" rel="noopener"><strong>{{ m.name }}</strong></a><div class="ai-meta">{{ m.cadence }}</div></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="ai-section-head">
+        <h2>Conferences</h2>
+        <a href="{{ '/events#conferences' | relative_url }}">All conferences &rarr;</a>
+      </div>
+      <ul class="ai-list">
+      {% for c in site.data.conferences limit: 5 %}
+        <li><a href="{{ c.url }}" rel="noopener"><strong>{{ c.name }}</strong></a><div class="ai-meta">{{ c.typical_month }}</div></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="ai-section ai-band">
+    <div>
+      <p class="ai-eyebrow">// founders</p>
+      <h2>Austin Infosec Founders</h2>
+      <p>A private Signal group and regular meetups for current, former, and aspiring security founders in Austin. Fundraising, hiring, pricing, and war stories, shared among people who've been there.</p>
+    </div>
+    <a class="ai-btn ai-btn-primary" href="{{ '/founders' | relative_url }}">About the group</a>
+  </section>
+
+  <section class="ai-section ai-split">
+    <div>
+      <div class="ai-section-head">
+        <h2>Hiring</h2>
+        <a href="{{ '/jobs' | relative_url }}">All jobs &rarr;</a>
+      </div>
+      <p>{{ hiring | size }} Austin security companies with open careers pages, plus local job boards and community postings.</p>
+      <a class="ai-btn ai-btn-ghost-dark" href="{{ '/contribute#post-a-job' | relative_url }}">Post a job</a>
+    </div>
+    <div>
+      <div class="ai-section-head">
+        <h2>News</h2>
+      </div>
+      <ul class="ai-list">
+      {% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
+      {% for post in posts limit: 4 %}
+        <li><a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a><div class="ai-meta">{{ post.date | date: "%b %-d, %Y" }}</div></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>
