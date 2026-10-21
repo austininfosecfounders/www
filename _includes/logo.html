@@ -1,0 +1,8 @@
+{%- assign _item = include.item -%}
+<span class="ai-logo{% if include.size == 'sm' %} ai-logo-sm{% endif %}" aria-hidden="true">
+  {%- if _item.logo -%}
+    <img src="{{ _item.logo | relative_url }}" alt="" loading="lazy" width="40" height="40">
+  {%- else -%}
+    {{ _item.name | slice: 0, 1 | upcase }}
+  {%- endif -%}
+</span>

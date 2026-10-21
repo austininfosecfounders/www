@@ -30,6 +30,13 @@
       if (count) count.textContent = shown + ' of ' + rows.length + ' shown';
     }
 
+    var params = new URLSearchParams(window.location.search);
+    selects.forEach(function (s) {
+      var v = params.get(s.getAttribute('data-field'));
+      if (v !== null) s.value = v;
+    });
+    if (search && params.get('q')) search.value = params.get('q');
+
     if (search) search.addEventListener('input', apply);
     selects.forEach(function (s) { s.addEventListener('change', apply); });
     apply();

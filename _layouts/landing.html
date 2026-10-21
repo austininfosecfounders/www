@@ -36,7 +36,7 @@ layout: base
     {% assign featured = companies | where: "featured", true | where_exp: "co", "co.stage != 'Acquired'" | sort_natural: "name" %}
     {% for co in featured %}
       <a class="ai-card" href="{{ co.url }}" rel="noopener">
-        <span class="ai-tag">{{ co.category }}</span>
+        <div class="ai-card-top">{% include logo.html item=co %}<span class="ai-tag">{{ co.category }}</span></div>
         <h3>{{ co.name }}</h3>
         <p>{{ co.description }}</p>
         <div class="ai-meta">{{ co.stage }}</div>
@@ -44,6 +44,26 @@ layout: base
     {% endfor %}
     </div>
   </section>
+
+  {% assign providers = companies | where: "featured_services", true | sort_natural: "name" %}
+  {% if providers.size > 0 %}
+  <section class="ai-section">
+    <div class="ai-section-head">
+      <h2>Service providers</h2>
+      <a href="{{ '/companies?category=Services' | relative_url }}">More providers &rarr;</a>
+    </div>
+    <p class="ai-section-lede">Local teams for penetration testing, red teaming, reverse engineering, and security assessments.</p>
+    <div class="ai-cards">
+    {% for co in providers %}
+      <a class="ai-card" href="{{ co.url }}" rel="noopener">
+        <div class="ai-card-top">{% include logo.html item=co %}</div>
+        <h3>{{ co.name }}</h3>
+        <p>{{ co.description }}</p>
+      </a>
+    {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   <section class="ai-section ai-split">
     <div>
@@ -89,6 +109,7 @@ layout: base
     <div class="ai-cards">
     {% for i in backers %}
       <a class="ai-card" href="{{ i.url }}" rel="noopener">
+        <div class="ai-card-top">{% include logo.html item=i %}</div>
         <h3>{{ i.name }}</h3>
         <p>{{ i.description }}</p>
       </a>

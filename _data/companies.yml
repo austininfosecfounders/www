@@ -3,11 +3,14 @@
 # stage: Public, Late-stage, Growth, Early, Acquired
 # hq: true = headquartered in Austin; false = major Austin office or Austin-based founders
 # featured: true = shown on the home page (independent companies only)
+# featured_services: true = shown in the home page Service providers section
+# logo: filled in by scripts/fetch_logos.py
 # acquired_by: acquirer and year, shown for acquired companies
 # Last verified: 2026-10-20
 
 # --- Austin HQ ---
 - name: CrowdStrike
+  logo: /assets/img/logos/crowdstrike.png
   url: https://www.crowdstrike.com
   careers_url: https://www.crowdstrike.com/en-us/careers/
   category: Endpoint
@@ -15,6 +18,7 @@
   hq: true
   description: "Falcon platform that stops breaches across endpoints, cloud workloads, identities, and AI systems"
 - name: SailPoint
+  logo: /assets/img/logos/sailpoint.png
   url: https://www.sailpoint.com
   careers_url: https://www.sailpoint.com/company/careers
   category: Identity
@@ -22,6 +26,7 @@
   hq: true
   description: "Identity security that discovers, governs, and secures access for human and non-human identities"
 - name: Forcepoint
+  logo: /assets/img/logos/forcepoint.png
   url: https://www.forcepoint.com
   careers_url: https://www.forcepoint.com/company/work-with-us
   category: Data Security
@@ -29,6 +34,7 @@
   hq: true
   description: "Data security that finds sensitive data and stops leaks across cloud, web, email, and AI tools"
 - name: NinjaOne
+  logo: /assets/img/logos/ninjaone.png
   url: https://www.ninjaone.com
   careers_url: https://www.ninjaone.com/careers/
   category: Endpoint
@@ -36,6 +42,7 @@
   hq: true
   description: "IT operations platform for endpoint management, patching, backup, and remote access in one console"
 - name: SolarWinds
+  logo: /assets/img/logos/solarwinds.png
   acquired_by: "Turn/River Capital (2025)"
   url: https://www.solarwinds.com
   careers_url: https://jobs.solarwinds.com/
@@ -44,6 +51,7 @@
   hq: true
   description: "Observability and IT management software for applications, networks, databases, and hybrid infrastructure"
 - name: Halcyon
+  logo: /assets/img/logos/halcyon.png
   url: https://www.halcyon.ai
   careers_url: https://www.halcyon.ai/careers
   category: Endpoint
@@ -51,6 +59,7 @@
   hq: true
   description: "Anti-ransomware platform that prevents, detects, and recovers from ransomware encryption and data theft"
 - name: SpyCloud
+  logo: /assets/img/logos/spycloud.png
   url: https://spycloud.com
   careers_url: https://spycloud.com/company/careers/
   category: Threat Intel
@@ -58,6 +67,7 @@
   hq: true
   description: "Finds stolen credentials and identity data from the dark web to stop account takeover and fraud"
 - name: Ontic
+  logo: /assets/img/logos/ontic.png
   url: https://ontic.co
   careers_url: https://ontic.co/company/careers/
   category: Other
@@ -65,6 +75,7 @@
   hq: true
   description: "Security management software that tracks and responds to physical threats to people, workplaces, and assets"
 - name: Invicti
+  logo: /assets/img/logos/invicti.png
   url: https://www.invicti.com
   careers_url: https://www.invicti.com/careers
   category: AppSec
@@ -72,6 +83,7 @@
   hq: true
   description: "Application security testing that finds and prioritizes vulnerabilities in web applications and APIs"
 - name: SEON
+  logo: /assets/img/logos/seon.png
   url: https://seon.io
   careers_url: https://seon.io/careers/
   category: Fraud
@@ -79,14 +91,17 @@
   hq: true
   description: "Fraud and anti-money-laundering detection across onboarding, payments, and ongoing transaction monitoring"
 - name: Praetorian
+  logo: /assets/img/logos/praetorian.png
   featured: true
   url: https://www.praetorian.com
   careers_url: https://www.praetorian.com/careers/
+  featured_services: true
   category: Offensive
   stage: Growth
   hq: true
   description: "Continuous offensive security testing that finds exploitable weaknesses before attackers do"
 - name: HiddenLayer
+  logo: /assets/img/logos/hiddenlayer.png
   featured: true
   url: https://www.hiddenlayer.com
   careers_url: https://www.hiddenlayer.com/careers
@@ -95,6 +110,7 @@
   hq: true
   description: "Security for AI models and agentic, generative, and predictive AI applications across their lifecycle"
 - name: CertifID
+  logo: /assets/img/logos/certifid.png
   url: https://www.certifid.com
   careers_url: https://www.certifid.com/company/careers
   category: Fraud
@@ -102,6 +118,7 @@
   hq: true
   description: "Wire fraud prevention and payment verification for real estate closings, buyers, sellers, and agents"
 - name: Portnox
+  logo: /assets/img/logos/portnox.png
   url: https://www.portnox.com
   careers_url: https://portnox.pinpointhq.com/
   category: Network
@@ -109,6 +126,7 @@
   hq: true
   description: "Cloud-native network access control and zero trust access for users, devices, and applications"
 - name: Living Security
+  logo: /assets/img/logos/living-security.svg
   url: https://www.livingsecurity.com
   careers_url: https://www.livingsecurity.com/about-us/careers-and-culture
   category: GRC
@@ -116,12 +134,14 @@
   hq: true
   description: "Human risk management that finds the riskiest employees and targets training and remediation to them"
 - name: Brinqa
+  logo: /assets/img/logos/brinqa.png
   url: https://www.brinqa.com
   category: GRC
   stage: Growth
   hq: true
   description: "Exposure management that correlates vulnerability data to prioritize remediation across the environment"
 - name: ALTR
+  logo: /assets/img/logos/altr.png
   url: https://altr.com
   careers_url: https://altr.com/careers/
   category: Data Security
@@ -129,24 +149,28 @@
   hq: true
   description: "Data security that classifies, masks, encrypts, and monitors access to sensitive data across cloud stacks"
 - name: Theori
+  logo: /assets/img/logos/theori.png
   url: https://theori.io
   category: Offensive
   stage: Growth
   hq: true
   description: "Offensive security research and automated vulnerability discovery for applications, AI systems, and networks"
 - name: Exodus Intelligence
+  logo: /assets/img/logos/exodus-intelligence.png
   url: https://blog.exodusintel.com
   category: Offensive
   stage: Growth
   hq: true
   description: "Zero-day and N-day vulnerability research with exploit intelligence and detection rules for defenders"
 - name: atsec information security
+  logo: /assets/img/logos/atsec-information-security.png
   url: https://www.atsec.com
   category: Services
   stage: Growth
   hq: true
   description: "Independent lab for security testing, evaluation, and certification of IT and cryptographic products"
 - name: Mallory
+  logo: /assets/img/logos/mallory.svg
   featured: true
   url: https://mallory.ai
   careers_url: https://mallory.ai/careers
@@ -155,6 +179,7 @@
   hq: true
   description: "Threat and exposure management that matches threat intelligence against your attack surface"
 - name: Nudge Security
+  logo: /assets/img/logos/nudge-security.png
   featured: true
   url: https://www.nudgesecurity.com
   careers_url: https://www.nudgesecurity.com/careers
@@ -163,6 +188,7 @@
   hq: true
   description: "Discovers and secures SaaS and AI apps, including shadow IT, by guiding employee behavior"
 - name: Command Zero
+  logo: /assets/img/logos/command-zero.png
   featured: true
   url: https://www.commandzero.ai
   careers_url: https://www.commandzero.ai/careers
@@ -171,6 +197,7 @@
   hq: true
   description: "Autonomous investigation of security alerts and incidents for SOC teams"
 - name: Spektion
+  logo: /assets/img/logos/spektion.png
   featured: true
   url: https://spektion.com
   careers_url: https://spektion.com/careers
@@ -179,18 +206,21 @@
   hq: true
   description: "Endpoint vulnerability management that finds exploitable software risks, including flaws without CVEs"
 - name: Evoke Security
+  logo: /assets/img/logos/evoke-security.png
   url: https://www.evokesecurity.com
   category: Other
   stage: Early
   hq: true
   description: "Detection and response for AI agents across endpoints, web, and cloud"
 - name: Trustwise
+  logo: /assets/img/logos/trustwise.png
   url: https://trustwise.ai
   category: Other
   stage: Early
   hq: true
   description: "Runtime control that authorizes AI agent actions against enterprise policy before they execute"
 - name: Veridise
+  logo: /assets/img/logos/veridise.png
   url: https://veridise.com
   careers_url: https://veridise.com/careers/
   category: AppSec
@@ -198,12 +228,14 @@
   hq: true
   description: "Smart contract audits and formal-methods tools for blockchain, DeFi, and zero-knowledge systems"
 - name: Clarity Security
+  logo: /assets/img/logos/clarity-security.png
   url: https://claritysecurity.com
   category: Identity
   stage: Early
   hq: true
   description: "Identity governance that discovers and remediates risk across human, non-human, and AI identities"
 - name: BalkanID
+  logo: /assets/img/logos/balkanid.png
   url: https://www.balkan.id
   careers_url: https://www.balkan.id/careers
   category: Identity
@@ -211,12 +243,14 @@
   hq: true
   description: "Identity governance for access reviews, lifecycle management, and non-human and AI identities"
 - name: HackNotice
+  logo: /assets/img/logos/hacknotice.png
   url: https://hacknotice.com
   category: Threat Intel
   stage: Early
   hq: true
   description: "Monitors breaches, leaked credentials, and dark-web exposure affecting employees and third-party vendors"
 - name: runZero
+  logo: /assets/img/logos/runzero.png
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.runzero.com
   category: Network
@@ -224,6 +258,7 @@
   hq: true
   description: "Asset discovery and exposure management across IT, OT, IoT, cloud, and mobile"
 - name: NetRise
+  logo: /assets/img/logos/netrise.svg
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.netrise.io
   category: Other
@@ -231,6 +266,7 @@
   hq: true
   description: "Analyzes compiled software and firmware to build SBOMs and find hidden supply chain risks"
 - name: Sevco Security
+  logo: /assets/img/logos/sevco-security.png
   acquired_by: "Arctic Wolf (2026)"
   url: https://www.sevcosecurity.com
   category: Other
@@ -238,6 +274,7 @@
   hq: true
   description: "Asset intelligence that finds devices missing security tools, agents, or management across IT and cloud"
 - name: RunReveal
+  logo: /assets/img/logos/runreveal.png
   acquired_by: "ClickHouse (2026)"
   url: https://runreveal.com
   category: Other
@@ -245,6 +282,7 @@
   hq: true
   description: "Security log management and detection that unifies log ingestion, threat detection, and response"
 - name: Evo Security
+  logo: /assets/img/logos/evo-security.png
   acquired_by: "Barracuda (2026)"
   url: https://www.evosecurity.com
   category: Identity
@@ -252,6 +290,7 @@
   hq: true
   description: "Multi-tenant MFA, SSO, and privileged access management built for managed service providers"
 - name: Closinglock
+  logo: /assets/img/logos/closinglock.png
   acquired_by: "CertifID (2026)"
   url: https://www.closinglock.com
   category: Fraud
@@ -259,6 +298,7 @@
   hq: true
   description: "Secure payments and wire fraud prevention for real estate closings and title companies"
 - name: Verosint
+  logo: /assets/img/logos/verosint.png
   acquired_by: "Imprivata"
   url: https://www.verosint.com
   category: Fraud
@@ -267,6 +307,7 @@
   description: "Identity threat detection that spots account takeover, fake accounts, and fraud at login"
 
 - name: Perpetual Systems
+  logo: /assets/img/logos/perpetual-systems.png
   url: https://www.perpetualsystems.com
   featured: true
   category: Other
@@ -274,6 +315,7 @@
   hq: true
   description: "Security data lake with an AI agent that triages and investigates SOC alerts"
 - name: Ghost Security
+  logo: /assets/img/logos/ghost-security.png
   url: https://ghostsecurity.ai
   featured: true
   category: AppSec
@@ -281,6 +323,7 @@
   hq: true
   description: "Autonomous security agents for application security that run inside your own infrastructure"
 - name: DryRun Security
+  logo: /assets/img/logos/dryrun-security.png
   url: https://www.dryrun.security
   featured: true
   category: AppSec
@@ -288,6 +331,7 @@
   hq: true
   description: "Reviews pull requests for security flaws in both human-written and AI-generated code"
 - name: Riscosity
+  logo: /assets/img/logos/riscosity.png
   url: https://www.riscosity.com
   featured: true
   category: Data Security
@@ -295,13 +339,14 @@
   hq: true
   description: "Data firewall that monitors and controls sensitive data flowing to AI and third-party vendors"
 - name: Recon InfoSec
+  logo: /assets/img/logos/recon-infosec.png
   url: https://www.reconinfosec.com
-  featured: true
   category: Services
   stage: Early
   hq: true
   description: "Managed detection and response and security operations for mid-market companies"
 - name: Keep Aware
+  logo: /assets/img/logos/keep-aware.png
   url: https://keepaware.com
   acquired_by: "Jamf (2026)"
   category: Endpoint
@@ -309,7 +354,16 @@
   hq: true
   description: "Browser security that detects threats and prevents data loss in web and AI tools"
 
+- name: Micro Evaluation Group (MEG)
+  logo: /assets/img/logos/micro-evaluation-group-meg.png
+  url: https://meg.rip
+  featured_services: true
+  category: Services
+  stage: Early
+  hq: true
+  description: "Penetration testing, reverse engineering, and hardware and software security assurance"
 - name: Eve Security
+  logo: /assets/img/logos/eve-security.png
   url: https://eve.security
   featured: true
   category: Other
@@ -317,8 +371,9 @@
   hq: true
   description: "Runtime firewall that checks AI agent actions against policy before they execute"
 - name: Chaotic Good Information Security
+  logo: /assets/img/logos/chaotic-good-information-security.png
   url: https://www.chaoticgoodinfosec.com
-  featured: true
+  featured_services: true
   category: Offensive
   stage: Early
   hq: true
@@ -340,6 +395,7 @@
 
 # --- Major Austin offices / Austin-based founders ---
 - name: Cloudflare
+  logo: /assets/img/logos/cloudflare.png
   url: https://www.cloudflare.com
   careers_url: https://www.cloudflare.com/careers/
   category: Network
@@ -347,6 +403,7 @@
   hq: false
   description: "Global network providing CDN, DDoS protection, WAF, and zero trust access for websites and apps"
 - name: Rapid7
+  logo: /assets/img/logos/rapid7.png
   url: https://www.rapid7.com
   careers_url: https://careers.rapid7.com/
   category: Other
@@ -354,6 +411,7 @@
   hq: false
   description: "Threat detection, vulnerability management, and managed detection and response for security teams"
 - name: Ping Identity
+  logo: /assets/img/logos/ping-identity.png
   url: https://www.pingidentity.com
   careers_url: https://www.pingidentity.com/en/company/careers.html
   category: Identity
@@ -361,18 +419,21 @@
   hq: false
   description: "Identity and access management for employees, partners, and customer logins"
 - name: Thales Cloud Protection & Licensing
+  logo: /assets/img/logos/thales-cloud-protection-licensing.png
   url: https://cpl.thalesgroup.com
   category: Data Security
   stage: Public
   hq: false
   description: "Data encryption, key management, identity, application security, and software licensing for enterprises"
 - name: IBM X-Force Red
+  logo: /assets/img/logos/ibm-x-force-red.png
   url: https://www.ibm.com/x-force
   category: Offensive
   stage: Public
   hq: false
   description: "IBM's offensive security team doing penetration testing and adversary simulation across apps, networks, and AI"
 - name: Hypori
+  logo: /assets/img/logos/hypori.png
   url: https://www.hypori.com
   careers_url: https://www.hypori.com/company/careers
   category: Endpoint
@@ -380,6 +441,7 @@
   hq: false
   description: "Virtual mobile workspace giving secure enterprise app access on personal devices without touching personal data"
 - name: Absolute Security
+  logo: /assets/img/logos/absolute-security.png
   url: https://www.absolute.com
   careers_url: https://www.absolute.com/company/careers
   category: Endpoint
@@ -387,12 +449,14 @@
   hq: false
   description: "Firmware-embedded endpoint resilience that detects threats, isolates devices, and restores them to secure states"
 - name: AttackIQ
+  logo: /assets/img/logos/attackiq.png
   url: https://www.attackiq.com
   category: Offensive
   stage: Late-stage
   hq: false
   description: "Breach and attack simulation that emulates adversaries to continuously test security controls"
 - name: Synack
+  logo: /assets/img/logos/synack.png
   url: https://www.synack.com
   acquired_by: "Merged with NetSPI (2026)"
   category: Offensive
@@ -400,18 +464,21 @@
   hq: false
   description: "Crowdsourced penetration testing combining vetted researchers and automation for continuous vulnerability discovery"
 - name: Fleet
+  logo: /assets/img/logos/fleet.png
   url: https://fleetdm.com
   category: Endpoint
   stage: Growth
   hq: false
   description: "Open-source device management and osquery-based visibility for macOS, Windows, Linux, iOS, and Android"
 - name: Root Evidence
+  logo: /assets/img/logos/root-evidence.png
   url: https://rootevidence.com
   category: Other
   stage: Early
   hq: false
   description: "Vulnerability scanning and reporting backed by a warranty covering cyber losses"
 - name: Hydden
+  logo: /assets/img/logos/hydden.png
   url: https://hydden.com
   category: Identity
   stage: Early
