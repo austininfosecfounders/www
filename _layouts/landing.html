@@ -79,26 +79,6 @@ layout: base
     <a class="ai-btn ai-btn-primary" href="{{ '/founders' | relative_url }}">About the group</a>
   </section>
 
-  {% assign exits = companies | where: "featured", true | where: "stage", "Acquired" | sort_natural: "name" %}
-  {% if exits.size > 0 %}
-  <section class="ai-section">
-    <div class="ai-section-head">
-      <h2>Exits</h2>
-      <a href="{{ '/companies' | relative_url }}">All companies &rarr;</a>
-    </div>
-    <p class="ai-section-lede">Companies built by Austin security founders that found a home. Their teams are still here, and a lot of them are building the next thing.</p>
-    <ul class="ai-exits">
-    {% for co in exits %}
-      <li>
-        <a href="{{ co.url }}" rel="noopener">{{ co.name }}</a>
-        <span class="ai-exit-arrow" aria-hidden="true">&rarr;</span>
-        <span class="ai-exit-to">{% if co.acquired_by %}{{ co.acquired_by }}{% else %}Acquired{% endif %}</span>
-      </li>
-    {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-
   {% assign backers = site.data.investors | where: "featured", true %}
   {% if backers.size > 0 %}
   <section class="ai-section">

@@ -2,7 +2,7 @@
 # category: Identity, Endpoint, Network, Cloud, AppSec, Threat Intel, Data Security, GRC, Services, Offensive, Fraud, Other
 # stage: Public, Late-stage, Growth, Early, Acquired
 # hq: true = headquartered in Austin; false = major Austin office or Austin-based founders
-# featured: true = shown on the home page (independent companies up top, acquired ones under Exits)
+# featured: true = shown on the home page (independent companies only)
 # acquired_by: acquirer and year, shown for acquired companies
 # Last verified: 2026-10-20
 
@@ -218,7 +218,6 @@
   hq: true
   description: "Monitors breaches, leaked credentials, and dark-web exposure affecting employees and third-party vendors"
 - name: runZero
-  featured: true
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.runzero.com
   category: Network
@@ -226,7 +225,6 @@
   hq: true
   description: "Asset discovery and exposure management across IT, OT, IoT, cloud, and mobile"
 - name: NetRise
-  featured: true
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.netrise.io
   category: Other
@@ -234,7 +232,6 @@
   hq: true
   description: "Analyzes compiled software and firmware to build SBOMs and find hidden supply chain risks"
 - name: Sevco Security
-  featured: true
   acquired_by: "Arctic Wolf (2026)"
   url: https://www.sevcosecurity.com
   category: Other
@@ -242,7 +239,6 @@
   hq: true
   description: "Asset intelligence that finds devices missing security tools, agents, or management across IT and cloud"
 - name: RunReveal
-  featured: true
   acquired_by: "ClickHouse (2026)"
   url: https://runreveal.com
   category: Other
@@ -308,7 +304,6 @@
   description: "Managed detection and response and security operations for mid-market companies"
 - name: Keep Aware
   url: https://keepaware.com
-  featured: true
   acquired_by: "Jamf (2026)"
   category: Endpoint
   stage: Acquired
@@ -331,7 +326,6 @@
   description: "Penetration testing, executive hardening, and continuous offensive security assessments"
 - name: Infocyte
   url: https://www.datto.com
-  featured: true
   acquired_by: "Datto (2022)"
   category: Endpoint
   stage: Acquired
@@ -339,7 +333,6 @@
   description: "Endpoint threat hunting and EDR that finds malware and attackers already inside networks"
 - name: Passage
   url: https://passage.1password.com
-  featured: true
   acquired_by: "1Password (2022)"
   category: Identity
   stage: Acquired
@@ -427,7 +420,6 @@
   description: "Identity discovery and visibility across human users, service accounts, and AI agents"
 - name: Siemplify
   url: https://cloud.google.com/security/products/security-orchestration-automation-response
-  featured: true
   acquired_by: "Google (2022)"
   category: Other
   stage: Acquired
@@ -435,7 +427,6 @@
   description: "SOAR platform automating alert triage, case management, and incident response for SOCs"
 - name: InQuest
   url: https://www.opswat.com
-  featured: true
   acquired_by: "OPSWAT (2024)"
   category: Threat Intel
   stage: Acquired
