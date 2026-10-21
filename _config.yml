@@ -26,7 +26,7 @@ navbar-links:
   Investors: "investors"
   Founders:
     - The Group: "founders"
-    - Founder Resources: "links"
+    - Founder Resources: "founders/resources"
   Contribute: "contribute"
 
 ################
