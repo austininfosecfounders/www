@@ -132,3 +132,25 @@ footer a:hover .fa-stack .fa-inverse { color: var(--ai-accent); }
 footer .fa-stack .fa-circle { box-shadow: none; }
 .ai-featured .ai-card:nth-child(n+7) { display: none; }
 @media (min-width: 992px) { .ai-featured .ai-card:nth-child(n+7) { display: flex; } }
+
+/* ---- Restrained accent: orange is for actions and labels only ---- */
+:root { --ai-accent: #F26B1D; --ai-accent-ink: #EA580C; }
+main p a, main li a:not(.ai-btn), .ai-desc a { color: var(--ai-ink); text-decoration: underline; text-decoration-color: rgba(234,88,12,.45); text-decoration-thickness: 1.5px; }
+main p a:hover, main li a:not(.ai-btn):hover { color: var(--ai-accent-ink); text-decoration-color: currentColor; }
+main .ai-list li a, main .ai-list li a strong { color: var(--ai-ink); text-decoration: none; font-weight: 600; }
+main .ai-list li a:hover, main .ai-list li a:hover strong { color: var(--ai-accent-ink); }
+.ai-section-head a { color: var(--ai-muted); text-decoration: none; }
+.ai-section-head a:hover { color: var(--ai-accent-ink); }
+.ai-table td a { color: var(--ai-ink); text-decoration: none; }
+.ai-table td a:hover { color: var(--ai-accent-ink); text-decoration: underline; }
+.ai-tag-hq { background: transparent; border-color: var(--ai-line); color: var(--ai-ink); }
+.ai-tag-hq::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ai-accent); margin-right: .35rem; vertical-align: 1px; }
+.ai-btn-primary { color: #FFFFFF !important; }
+.ai-btn-primary:hover { background: var(--ai-accent-ink); }
+.ai-hero, .header-section { background-image: radial-gradient(circle at 85% 0%, rgba(242,107,29,.10), transparent 45%), linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); }
+
+/* Monochrome code highlighting to match the palette */
+.highlight * { color: var(--ai-text) !important; font-style: normal !important; font-weight: 400 !important; }
+.highlight .na, .highlight .nt, .highlight .p-Indicator { color: var(--ai-ink) !important; font-weight: 600 !important; }
+.highlight .c, .highlight .c1, .highlight .cm { color: #8C959F !important; }
+pre { border-left-color: var(--ai-line); }
