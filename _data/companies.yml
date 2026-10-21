@@ -1,7 +1,7 @@
 # Austin security companies. See /contribute for the format.
 # category: Identity, Endpoint, Network, Cloud, AppSec, Threat Intel, Data Security, GRC, Services, Offensive, Fraud, Other
 # stage: Public, Late-stage, Growth, Early, Acquired
-# hq: true = headquartered in Austin; false = major Austin office
+# hq: true = headquartered in Austin; false = major Austin office or Austin-based founders
 # featured: true = shown on the home page (independent companies up top, acquired ones under Exits)
 # acquired_by: acquirer and year, shown for acquired companies
 # Last verified: 2026-10-20
@@ -80,6 +80,7 @@
   hq: true
   description: "Fraud prevention and AML platform; founded in Budapest, HQ in Austin."
 - name: Praetorian
+  featured: true
   url: https://www.praetorian.com
   careers_url: https://www.praetorian.com/careers/
   category: Offensive
@@ -87,6 +88,7 @@
   hq: true
   description: "Offensive security firm and Chariot exposure management platform."
 - name: HiddenLayer
+  featured: true
   url: https://www.hiddenlayer.com
   careers_url: https://www.hiddenlayer.com/careers
   category: Other
@@ -153,6 +155,7 @@
   hq: true
   description: "AI-native threat intelligence and exposure management platform."
 - name: Nudge Security
+  featured: true
   url: https://www.nudgesecurity.com
   careers_url: https://www.nudgesecurity.com/careers
   category: Cloud
@@ -160,6 +163,7 @@
   hq: true
   description: "SaaS and workforce AI security governance."
 - name: Command Zero
+  featured: true
   url: https://www.commandzero.ai
   careers_url: https://www.commandzero.ai/careers
   category: Other
@@ -167,6 +171,7 @@
   hq: true
   description: "AI-assisted cyber investigation platform for SOCs."
 - name: Spektion
+  featured: true
   url: https://spektion.com
   careers_url: https://spektion.com/careers
   category: Endpoint
@@ -220,6 +225,7 @@
   hq: true
   description: "Exposure and asset discovery; acquired by Accenture/Dragos (2026)."
 - name: NetRise
+  featured: true
   acquired_by: "Accenture / Dragos (2026)"
   url: https://www.netrise.io
   category: Other
@@ -227,6 +233,7 @@
   hq: true
   description: "Firmware and software supply-chain risk; acquired by Accenture/Dragos (2026)."
 - name: Sevco Security
+  featured: true
   acquired_by: "Arctic Wolf (2026)"
   url: https://www.sevcosecurity.com
   category: Other
@@ -263,7 +270,82 @@
   hq: true
   description: "Account fraud detection (formerly 443ID); acquired by Imprivata."
 
-# --- Major Austin offices ---
+- name: Perpetual Systems
+  url: https://www.perpetualsystems.com
+  featured: true
+  category: Other
+  stage: Early
+  hq: true
+  description: "AI-native SIEM running on a security data lake in your own cloud."
+- name: Ghost Security
+  url: https://ghostsecurity.ai
+  featured: true
+  category: AppSec
+  stage: Early
+  hq: true
+  description: "Agentic application and API security for cloud apps."
+- name: DryRun Security
+  url: https://www.dryrun.security
+  featured: true
+  category: AppSec
+  stage: Early
+  hq: true
+  description: "AI-powered contextual code security analysis."
+- name: Riscosity
+  url: https://www.riscosity.com
+  featured: true
+  category: Data Security
+  stage: Early
+  hq: true
+  description: "Data-flow security and third-party data observability."
+- name: Recon InfoSec
+  url: https://www.reconinfosec.com
+  featured: true
+  category: Services
+  stage: Early
+  hq: true
+  description: "Managed detection and response, incident response, and OpenSOC training."
+- name: Keep Aware
+  url: https://keepaware.com
+  featured: true
+  acquired_by: "Jamf (2026)"
+  category: Endpoint
+  stage: Acquired
+  hq: true
+  description: "Browser detection and response; acquired by Jamf (2026)."
+
+- name: Eve Security
+  url: https://eve.security
+  featured: true
+  category: Other
+  stage: Early
+  hq: true
+  description: "Runtime security and governance for enterprise AI agents."
+- name: Chaotic Good Information Security
+  url: https://www.chaoticgoodinfosec.com
+  featured: true
+  category: Offensive
+  stage: Early
+  hq: true
+  description: "Specialized penetration testing firm."
+- name: Infocyte
+  url: https://www.datto.com
+  featured: true
+  acquired_by: "Datto (2022)"
+  category: Endpoint
+  stage: Acquired
+  hq: true
+  description: "Threat hunting, EDR and MDR for MSPs; acquired by Datto (2022)."
+- name: Passage
+  url: https://passage.1password.com
+  featured: true
+  acquired_by: "1Password (2022)"
+  category: Identity
+  stage: Acquired
+  hq: true
+  description: "Passkey-first authentication; acquired by 1Password (2022)."
+
+# --- Major Austin offices / Austin-based founders ---
 - name: Cloudflare
   url: https://www.cloudflare.com
   careers_url: https://www.cloudflare.com/careers/
@@ -311,3 +393,50 @@
   stage: Acquired
   hq: false
   description: "Endpoint resilience and persistence firmware; Austin office."
+- name: AttackIQ
+  url: https://www.attackiq.com
+  category: Offensive
+  stage: Late-stage
+  hq: false
+  description: "Breach and attack simulation; Austin-based co-founder."
+- name: Synack
+  url: https://www.synack.com
+  acquired_by: "Merged with NetSPI (2026)"
+  category: Offensive
+  stage: Acquired
+  hq: false
+  description: "Crowdsourced penetration testing; merged with NetSPI (2026)."
+- name: Fleet
+  url: https://fleetdm.com
+  category: Endpoint
+  stage: Growth
+  hq: false
+  description: "Open-source device management built on osquery; Austin-based CEO."
+- name: Root Evidence
+  url: https://rootevidence.com
+  category: Other
+  stage: Early
+  hq: false
+  description: "Evidence-based vulnerability management; Austin-based co-founder."
+- name: Hydden
+  url: https://hydden.com
+  category: Identity
+  stage: Early
+  hq: false
+  description: "Identity system of record for humans, agents, and machine identities."
+- name: Siemplify
+  url: https://cloud.google.com/security/products/security-orchestration-automation-response
+  featured: true
+  acquired_by: "Google (2022)"
+  category: Other
+  stage: Acquired
+  hq: false
+  description: "Security orchestration and automation (SOAR); acquired by Google (2022); Austin-based founder."
+- name: InQuest
+  url: https://www.opswat.com
+  featured: true
+  acquired_by: "OPSWAT (2024)"
+  category: Threat Intel
+  stage: Acquired
+  hq: false
+  description: "Network detection and file threat analysis; acquired by OPSWAT (2024); Austin-based founder."
