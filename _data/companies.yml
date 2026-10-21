@@ -148,6 +148,7 @@
   hq: true
   description: "Common Criteria, FIPS and security evaluation lab."
 - name: Mallory
+  featured: true
   url: https://mallory.ai
   careers_url: https://mallory.ai/careers
   category: Threat Intel
