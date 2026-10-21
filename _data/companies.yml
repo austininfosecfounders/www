@@ -51,11 +51,10 @@
   hq: true
   description: "Anti-ransomware platform that prevents, detects, and recovers from ransomware encryption and data theft"
 - name: SpyCloud
-  featured: true
   url: https://spycloud.com
   careers_url: https://spycloud.com/company/careers/
   category: Threat Intel
-  stage: Late-stage
+  stage: Acquired
   hq: true
   description: "Finds stolen credentials and identity data from the dark web to stop account takeover and fraud"
 - name: Ontic
