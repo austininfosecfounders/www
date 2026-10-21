@@ -1,5 +1,5 @@
 ---
 layout: redirect
-redirect_to: /founders
+redirect_to: /founders/
 sitemap: false
 ---

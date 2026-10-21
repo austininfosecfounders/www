@@ -166,3 +166,8 @@ pre { border-left-color: var(--ai-line); }
 .ai-card .ai-card-top .ai-tag { margin-bottom: 0; align-self: center; }
 .ai-co { display: flex; align-items: center; gap: .6rem; }
 .ai-table td .ai-tag-hq { margin: .4rem 0 0 2.35rem; }
+
+/* Nav links: full-contrast white so they don't read as faded */
+.navbar-custom .nav-link { color: #FFFFFF !important; font-weight: 600; }
+.navbar-custom .navbar-brand { color: #FFFFFF !important; }
+.navbar-custom .dropdown-item { color: #FFFFFF; }
