@@ -1,0 +1,32 @@
+---
+layout: page
+title: Austin Security Events
+subtitle: Meetups and conferences around town
+permalink: /events/
+---
+
+<p>Recurring meetups and annual conferences for the Austin security community. Founders: our own gatherings are on the <a href="https://austininfosecfounders.com/cal">meetup calendar</a>.</p>
+
+<h2>Meetups &amp; groups</h2>
+<div class="ai-cards">
+{% for m in site.data.meetups %}
+  <a class="ai-card" href="{{ m.url }}" rel="noopener">
+    <h3>{{ m.name }}</h3>
+    <p>{{ m.description }}</p>
+    {% if m.cadence %}<div class="ai-meta">{{ m.cadence }}</div>{% endif %}
+  </a>
+{% endfor %}
+</div>
+
+<h2>Conferences</h2>
+<div class="ai-cards">
+{% for c in site.data.conferences %}
+  <a class="ai-card" href="{{ c.url }}" rel="noopener">
+    <h3>{{ c.name }}</h3>
+    <p>{{ c.description }}</p>
+    {% if c.typical_month %}<div class="ai-meta">Usually {{ c.typical_month }}</div>{% endif %}
+  </a>
+{% endfor %}
+</div>
+
+<p>Running something we've missed? <a href="{{ '/contribute' | relative_url }}">Add it</a>.</p>

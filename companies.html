@@ -1,0 +1,51 @@
+---
+layout: page
+title: Austin Security Companies
+subtitle: Security companies headquartered or building in Austin
+permalink: /companies/
+js:
+  - "/assets/js/directory-filter.js"
+---
+
+{% assign companies = site.data.companies | sort_natural: "name" %}
+{% assign categories = site.data.companies | map: "category" | uniq | sort %}
+{% assign stages = site.data.companies | map: "stage" | uniq | sort %}
+
+<p>A community-maintained directory of information security companies with roots or real teams in Austin. Missing someone, or something out of date? <a href="{{ '/contribute' | relative_url }}">Send a fix</a>.</p>
+
+<div class="ai-filter" data-target="#company-table" data-count="#company-count">
+  <input type="search" placeholder="Search companies…" aria-label="Search companies">
+  <select data-field="category" aria-label="Filter by category">
+    <option value="">All categories</option>
+    {% for c in categories %}<option value="{{ c }}">{{ c }}</option>{% endfor %}
+  </select>
+  <select data-field="stage" aria-label="Filter by stage">
+    <option value="">All stages</option>
+    {% for s in stages %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+  </select>
+  <select data-field="hq" aria-label="Filter by headquarters">
+    <option value="">HQ or office</option>
+    <option value="true">Austin HQ only</option>
+  </select>
+</div>
+<div id="company-count" class="ai-count"></div>
+
+<table class="ai-table" id="company-table">
+  <thead>
+    <tr><th>Company</th><th class="ai-hide-sm">What they do</th><th>Category</th><th class="ai-hide-sm">Stage</th><th>Jobs</th></tr>
+  </thead>
+  <tbody>
+  {% for co in companies %}
+    <tr data-row data-category="{{ co.category }}" data-stage="{{ co.stage }}" data-hq="{{ co.hq }}">
+      <td>
+        <a href="{{ co.url }}" rel="noopener">{{ co.name }}</a>
+        {% if co.hq %}<br><span class="ai-tag ai-tag-hq">Austin HQ</span>{% endif %}
+      </td>
+      <td class="ai-desc ai-hide-sm">{{ co.description }}</td>
+      <td><span class="ai-tag">{{ co.category }}</span></td>
+      <td class="ai-hide-sm">{{ co.stage }}</td>
+      <td>{% if co.careers_url %}<a href="{{ co.careers_url }}" rel="noopener">Careers</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

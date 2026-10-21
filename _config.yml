@@ -10,18 +10,24 @@
 ############################
 
 # Name of website
-title: Austin Infosec Founders
+title: Austin Infosec
 
 # Your name to show in the footer
-author: Austin Infosec Founders
+author: Austin Infosec
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Us: "aboutus"
-  Resources: "links"
+  Companies: "companies"
+  Jobs: "jobs"
+  Events: "events"
+  Investors: "investors"
+  Founders:
+    - The Group: "founders"
+    - Founder Resources: "links"
+  Contribute: "contribute"
 
 ################
 # --- Logo --- #
@@ -81,7 +87,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: Austin Infosec Founders List
+rss-description: Austin Infosec community news
 
 ###########################
 # --- General options --- #
@@ -122,7 +128,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "austin,infosec,security,cybersecurity,companies,jobs,meetups,founders,texas"
 
 ######################################
 # --- Colours / background image --- #
@@ -153,8 +159,8 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/austin-infosec.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
@@ -254,7 +260,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
