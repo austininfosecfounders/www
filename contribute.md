@@ -23,6 +23,8 @@ Edit [`_data/companies.yml`](https://github.com/austininfosecfounders/www/edit/m
   acquired_by: Acme (2026)  # optional; for stage: Acquired
 ```
 
+Logos are pulled from each site's icon: after adding a company, run `python3 scripts/fetch_logos.py` (or leave it and a maintainer will).
+
 We list security companies headquartered in Austin or with a real team here (not just a sales rep).
 
 ## Post a job

@@ -38,6 +38,7 @@ js:
 <div class="ai-cards" id="hiring-list">
 {% for co in hiring %}
   <a class="ai-card" data-row href="{{ co.careers_url }}" rel="noopener">
+    <div class="ai-card-top">{% include logo.html item=co %}</div>
     <h3>{{ co.name }}</h3>
     <p>{{ co.description }}</p>
     <div class="ai-meta">{{ co.category }}{% if co.hq %} &middot; Austin HQ{% endif %}</div>

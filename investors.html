@@ -12,6 +12,7 @@ permalink: /investors/
 {% assign investors = featured | concat: rest %}
 {% for i in investors %}
   <a class="ai-card" href="{{ i.url }}" rel="noopener">
+    <div class="ai-card-top">{% include logo.html item=i %}</div>
     <h3>{{ i.name }}</h3>
     <p>{{ i.description }}</p>
   </a>

@@ -156,3 +156,13 @@ main .ai-list li a:hover, main .ai-list li a:hover strong { color: var(--ai-acce
 pre { border-left-color: var(--ai-line); }
 
 .ai-table td .ai-meta { font-size: .72rem; color: var(--ai-muted); margin-top: .15rem; }
+
+/* ---- Logos ---- */
+.ai-logo { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9px; border: 1px solid var(--ai-line); background: #FFFFFF; overflow: hidden; font-weight: 700; font-size: 1rem; color: var(--ai-muted); }
+.ai-logo img { width: 28px; height: 28px; object-fit: contain; }
+.ai-logo-sm { width: 28px; height: 28px; border-radius: 7px; font-size: .8rem; }
+.ai-logo-sm img { width: 20px; height: 20px; }
+.ai-card-top { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .75rem; }
+.ai-card .ai-card-top .ai-tag { margin-bottom: 0; align-self: center; }
+.ai-co { display: flex; align-items: center; gap: .6rem; }
+.ai-table td .ai-tag-hq { margin: .4rem 0 0 2.35rem; }

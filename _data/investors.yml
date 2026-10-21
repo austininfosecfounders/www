@@ -1,36 +1,46 @@
 # Austin investors active in security/infrastructure. Last verified: 2026-10-20
 # featured: true = shown on the home page
 - name: Runtime Ventures
+  logo: /assets/img/logos/runtime-ventures.png
   url: https://www.runtime.vc
   featured: true
   description: "Austin seed fund focused exclusively on cybersecurity; $32M debut fund, $250K-$2M checks at pre-seed and seed."
 - name: Silverton Partners
+  logo: /assets/img/logos/silverton-partners.png
   featured: true
   url: https://www.silvertonpartners.com
   description: "Austin early-stage VC. Security portfolio includes SailPoint, Ping Identity, SpyCloud, Living Security, Clarity and Verosint."
 - name: LiveOak Ventures
+  logo: /assets/img/logos/liveoak-ventures.png
   featured: true
   url: https://liveoak.vc
   description: "Austin early-stage VC, pre-seed to Series B. Security portfolio includes Mallory, Spektion and Closinglock."
 - name: S3 Ventures
+  logo: /assets/img/logos/s3-ventures.png
   featured: true
   url: https://www.s3vc.com
   description: "Austin VC, seed to Series B. Co-led Arpio's Series A (cloud recovery and resilience)."
 - name: Next Coast Ventures
+  logo: /assets/img/logos/next-coast-ventures.png
   url: https://www.nextcoastventures.com
   description: "Austin VC. Security and infrastructure portfolio includes Judy Security, Osano and SiteOwl."
 - name: Capital Factory
+  logo: /assets/img/logos/capital-factory.png
   url: https://www.capitalfactory.com
   description: "Texas accelerator and investor; hosts DIU and AFWERX outposts."
 - name: Moonshots Capital
+  logo: /assets/img/logos/moonshots-capital.png
   url: https://moonshotscapital.com
   description: "Austin seed VC backing veteran founders; cyber is its largest sector."
 - name: Elsewhere Partners
+  logo: /assets/img/logos/elsewhere-partners.png
   url: https://elsewhere.partners
   description: "Austin growth equity for bootstrapped B2B software. Security portfolio includes Portnox."
 - name: Vista Equity Partners
+  logo: /assets/img/logos/vista-equity-partners.png
   url: https://www.vistaequitypartners.com
   description: "Austin-headquartered software private equity; security deals include Ping Identity and KnowBe4."
 - name: Central Texas Angel Network (CTAN)
+  logo: /assets/img/logos/central-texas-angel-network-ctan.png
   url: https://www.ctan.com
   description: "Austin angel network that has funded 230+ companies, including in cybersecurity."
